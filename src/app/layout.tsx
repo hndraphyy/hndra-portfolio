@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import "../styles/global.css";
 
+import Navbar from "@/components/navbar/Navbar";
+
 export const metadata: Metadata = {
   title: {
     default: "Home | Hendra Aditya",
     template: "%s | Hendra Aditya",
   },
-  description:
-    "Portofolio resmi Hendra Aditya, seorang Frontend Web Developer yang menggunakan Next.js, React, dan Tailwind CSS.",
+  description: "Portfolio hendra aditya",
   keywords: [
     "Hendra Aditya",
     "Hendra Aditya Pratama",
@@ -18,18 +19,17 @@ export const metadata: Metadata = {
     "Next.js",
     "Tailwind CSS",
   ],
-  authors: [{ name: "Hendra Aditya", url: "https://domainkamu.vercel.app" }],
+  authors: [{ name: "Hendra Aditya", url: "https://hendraaditya.vercel.app" }],
   creator: "Hendra Aditya",
-  metadataBase: new URL("https://domainkamu.vercel.app"),
+  metadataBase: new URL("https://hendraaditya.vercel.app"),
   openGraph: {
     title: "Hendra Aditya Portfolio",
-    description:
-      "Lihat karya dan proyek-proyek Hendra Aditya, Frontend Web Developer profesional.",
-    url: "https://domainkamu.vercel.app",
+    description: "projects",
+    url: "https://hendraaditya.vercel.app",
     siteName: "Hendra Aditya Portfolio",
     images: [
       {
-        url: "https://domainkamu.vercel.app/og.png",
+        url: "https://hendraaditya.vercel.app/og.png",
         width: 1200,
         height: 630,
         alt: "Hendra Aditya OpenGraph",
@@ -43,8 +43,8 @@ export const metadata: Metadata = {
     title: "Hendra Aditya Portfolio",
     description:
       "Kunjungi portofolio Hendra Aditya, seorang Web Developer berbasis Next.js.",
-    images: ["https://domainkamu.vercel.app/og.png"],
-    creator: "@kamuJikaAdaTwitter",
+    images: ["https://hendraaditya.vercel.app/og.png"],
+    creator: "",
   },
   robots: {
     index: true,
@@ -66,7 +66,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="font-poppins">
-      <body suppressHydrationWarning>{children}</body>
+      <body suppressHydrationWarning>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }

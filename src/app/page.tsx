@@ -1,5 +1,9 @@
-export default function Home() {
+import Home from "./home/page";
+
+export default function root() {
   return (
-    <div className="bg-red-500 text-white">Test Tailwind</div>
+    <>
+      <Home />
+    </>
   );
 }
