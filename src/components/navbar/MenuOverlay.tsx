@@ -5,6 +5,7 @@ import NavLink from "./NavLink";
 import { navItems } from "./navItems";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { FiX } from "react-icons/fi";
 
 type MenuOverlayProps = {
   isAnimating: boolean;
@@ -45,9 +46,9 @@ const MenuOverlay = ({ isAnimating, isOpen, onToggle }: MenuOverlayProps) => {
         {/* Close button */}
         <button
           onClick={onToggle}
-          className="absolute px-4 sm:px-6 lg:px-8 right-0 top-4 text-sm md:text-xl 2xl:text-2xl font-extralight text-black"
+          className="absolute px-4 sm:px-6 lg:px-8 right-0 top-5 text-md md:text-2xl 2xl:text-3xl font-extralight text-black"
         >
-          Menu
+          <FiX />
         </button>
 
         {/* Menu items */}
@@ -71,7 +72,7 @@ const MenuOverlay = ({ isAnimating, isOpen, onToggle }: MenuOverlayProps) => {
                 <p className="text-lg md:text-3xl lg:text-4xl font-medium">
                   Hendra Aditya Pratama
                 </p>
-                <p className="text-lg md:text-3xl lg:text-4xl font-medium flex gap-4">
+                <p className="text-2xl md:text-3xl lg:text-4xl font-medium flex gap-3 md:gap-4">
                   <a
                     href="https://wa.me/6281234567890"
                     target="_blank"

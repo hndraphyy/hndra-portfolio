@@ -1,8 +1,8 @@
-// components/navbar/Navbar.tsx
 "use client";
 
 import Link from "next/link";
 import { useState } from "react";
+import { FiMenu } from "react-icons/fi";
 import MenuOverlay from "./MenuOverlay";
 
 const Navbar = () => {
@@ -27,15 +27,15 @@ const Navbar = () => {
         <div className="flex items-center justify-between py-4">
           <Link
             href="/"
-            className="text-sm md:text-xl 2xl:text-2xl font-extralight text-white"
+            className="text-sm md:text-xl 2xl:text-2xl font-light text-white"
           >
             Hndra
           </Link>
           <button
             onClick={toggleMenu}
-            className="text-sm md:text-xl 2xl:text-2xl font-extralight text-white"
+            className="text-md md:text-2xl 2xl:text-3xl font-extralight text-white"
           >
-            Menu
+            <FiMenu />
           </button>
         </div>
       </div>
