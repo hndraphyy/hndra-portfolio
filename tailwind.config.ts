@@ -34,9 +34,9 @@ const config: Config = {
         },
       },
       animation: {
-        slideDown: "slideDown 0.3s ease-out forwards",
-        slideUp: "slideUp 0.3s ease-in forwards",
-        progressBar: "progressBar 1s ease-in-out forwards",
+        slideDown: "slideDown 0.6s ease-out forwards",
+        slideUp: "slideUp 0.6s ease-in forwards",
+        progressBar: "progressBar 1s ease-in-out forwards delay-200ms",
         fadeInDelay: "fadeInDelay 0.5s ease-out 1.2s forwards",
       },
     },
