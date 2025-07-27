@@ -14,7 +14,7 @@ const MenuOverlay = ({ isAnimating, isOpen, onToggle }: MenuOverlayProps) => {
   return (
     <div className="fixed inset-0 z-50 overflow-hidden">
       <div
-        className={`absolute inset-0 bg-white text-black transform transition-all duration-1000 ease-in-out px-4 lg:px-8 py-4 ${
+        className={`absolute inset-0 bg-white text-black transform transition-all duration-300 ease-in-out px-4 lg:px-8 py-4 ${
           isAnimating ? "animate-slideUp" : isOpen ? "animate-slideDown" : ""
         }`}
       >
