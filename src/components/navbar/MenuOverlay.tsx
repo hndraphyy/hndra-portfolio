@@ -52,7 +52,7 @@ const MenuOverlay = ({ isAnimating, isOpen, onToggle }: MenuOverlayProps) => {
         </button>
 
         {/* Menu items */}
-        <ul className="text-2xl md:text-4xl lg:text-6xl 2xl:text-7xl font-extralight space-y-3 md:space-y-4 lg:space-y-6">
+        <ul className="text-4xl lg:text-6xl 2xl:text-7xl font-extralight space-y-3 md:space-y-4 lg:space-y-6">
           {navItems.map((item) => (
             <NavLink key={item.href} {...item} onClick={onToggle} />
           ))}
