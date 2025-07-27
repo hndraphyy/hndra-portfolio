@@ -1,9 +1,16 @@
-import Home from "./home/page";
+"use client";
 
-export default function root() {
+import SplashScreen from "../components/SplashScreen";
+import HeroSection from "@/components/sections/home/Hero";
+import AboutSection from "@/components/sections/home/About";
+
+export default function RootPage() {
   return (
     <>
-      <Home />
+      <SplashScreen onFinish={() => {}} />
+
+      <HeroSection />
+      <AboutSection />
     </>
   );
 }

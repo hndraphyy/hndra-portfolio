@@ -12,6 +12,9 @@ const config: Config = {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
+      colors: {
+        background: "#0f0f11",
+      },
       keyframes: {
         slideDown: {
           "0%": { transform: "translateY(-100%)", opacity: "0" },

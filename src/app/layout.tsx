@@ -1,6 +1,6 @@
+// app/layout.tsx
 import type { Metadata } from "next";
 import "../styles/global.css";
-
 import Navbar from "@/components/navbar/Navbar";
 
 export const metadata: Metadata = {
@@ -67,8 +67,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="font-poppins">
       <body suppressHydrationWarning>
-        <Navbar />
-        {children}
+          <Navbar />
+          {children}
       </body>
     </html>
   );

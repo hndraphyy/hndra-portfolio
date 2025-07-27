@@ -22,18 +22,18 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-800 fixed top-0 w-full z-50">
+    <nav className="bg-transparent fixed top-0 w-full z-50">
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-4">
           <Link
             href="/"
-            className="text-sm md:text-xl font-extralight text-white"
+            className="text-sm md:text-xl 2xl:text-2xl font-extralight text-white"
           >
             Hndra
           </Link>
           <button
             onClick={toggleMenu}
-            className="text-sm md:text-xl font-extralight text-white"
+            className="text-sm md:text-xl 2xl:text-2xl font-extralight text-white"
           >
             Menu
           </button>

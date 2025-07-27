@@ -3,3 +3,8 @@
 @tailwind utilities;
 
 @import "./fonts.css";
+
+html,
+body {
+  background: transparent !important;
+}

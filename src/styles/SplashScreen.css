@@ -1,0 +1,71 @@
+/* Full screen container */
+.splash-container {
+  position: fixed;
+  inset: 0;
+  background: transparent;
+  overflow: hidden;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  pointer-events: none;
+}
+
+/* Panel atas dan bawah */
+.splash-top,
+.splash-bottom {
+  height: calc(50% - 1.5px); /* loading-line: 3px */
+  background: white; /* bisa disesuaikan dengan warna brand kamu */
+  transform: translateY(0);
+  transition: transform 1s ease-in-out;
+}
+
+/* Garis loading tengah */
+.loading-line-wrapper {
+  height: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white; /* bisa juga transparent */
+  z-index: 2;
+  transition: opacity 0.3s ease;
+}
+
+/* Loading line animasi grow */
+.loading-line {
+  width: 8px;
+  height: 3px;
+  background: black;
+  animation: grow-line 2s ease-in-out forwards;
+}
+
+@keyframes grow-line {
+  0%,
+  30% {
+    width: 8px;
+    border-radius: 50%;
+  }
+  100% {
+    width: 100vw;
+    border-radius: 0;
+  }
+}
+
+/* Animasi buka pintu */
+.splash-container.split-active .splash-top {
+  transform: translateY(-100%);
+}
+
+.splash-container.split-active .splash-bottom {
+  transform: translateY(100%);
+}
+
+/* Animasi buka pintu */
+.splash-container.split-active {
+  background: transparent;
+}
+
+/* Sembunyikan loading-line saat animasi split */
+.hide-line {
+  opacity: 0;
+  pointer-events: none;
+}
