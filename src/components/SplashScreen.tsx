@@ -9,7 +9,7 @@ export default function SplashScreen({ onFinish }: { onFinish: () => void }) {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setSplit(true); // mulai buka pintu
-    }, 2500); // setelah grow-line selesai
+    }, 2000); // setelah grow-line selesai
 
     return () => clearTimeout(timeout);
   }, []);
