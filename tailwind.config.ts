@@ -33,12 +33,23 @@ const config: Config = {
           "0%": { opacity: "0", transform: "translateY(8px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
+        fadeUp: {
+          "0%": { opacity: "0", transform: "translateY(20px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        fadeDelay: {
+          "0%": { opacity: "0", transform: "translateY(10px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
       },
       animation: {
         slideDown: "slideDown 0.6s ease-in-out forwards",
         slideUp: "slideUp 0.6s ease-in-out forwards",
         progressBar: "progressBar 1s ease-in-out forwards",
         fadeInDelay: "fadeInDelay 0.5s ease-out 1.2s forwards",
+        "fade-up": "fadeUp 0.8s ease-out forwards",
+        "fade-delay": "fadeDelay 0.6s ease-out 0.5s forwards",
+        "pulse-slow": "pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       },
     },
   },
