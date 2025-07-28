@@ -1,39 +1,25 @@
 "use client";
-
 import { useEffect, useState, useRef } from "react";
 import "../styles/SplashScreen.css";
 
 export default function SplashScreen({ onFinish }: { onFinish: () => void }) {
   const [split, setSplit] = useState(false);
-  const [shouldShow, setShouldShow] = useState(false);
   const bottomRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const hasSeen = sessionStorage.getItem("hasSeenSplash");
+    const timeout = setTimeout(() => {
+      setSplit(true); // mulai buka pintu
+    }, 1900); // setelah grow-line selesai
 
-    if (!hasSeen) {
-      // Pertama kali buka tab
-      setShouldShow(true);
-      sessionStorage.setItem("hasSeenSplash", "true");
-
-      const timeout = setTimeout(() => {
-        setSplit(true); // mulai buka pintu
-      }, 1900);
-
-      return () => clearTimeout(timeout);
-    } else {
-      // Sudah pernah lihat splash, langsung lanjut
-      onFinish();
-    }
+    return () => clearTimeout(timeout);
   }, []);
 
+  // Setelah panel bawah selesai animasi keluar, baru panggil onFinish
   const handleTransitionEnd = (e: React.TransitionEvent) => {
     if (split && e.target === bottomRef.current) {
       onFinish();
     }
   };
-
-  if (!shouldShow) return null;
 
   return (
     <div className={`splash-container${split ? " split-active" : ""}`}>
