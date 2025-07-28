@@ -19,9 +19,12 @@ export default function SplashScreen({ onFinish }: { onFinish: () => void }) {
       setFirstVisit(false);
     }
 
-    const timeout = setTimeout(() => {
-      setSplit(true);
-    }, isFirst ? 1900 : 300); // Durasi animasi tergantung apakah pertama kali
+    const timeout = setTimeout(
+      () => {
+        setSplit(true);
+      },
+      isFirst ? 1820 : 300
+    ); // Durasi animasi tergantung apakah pertama kali
 
     return () => clearTimeout(timeout);
   }, []);
@@ -35,7 +38,7 @@ export default function SplashScreen({ onFinish }: { onFinish: () => void }) {
   return (
     <div className={`splash-container${split ? " split-active" : ""}`}>
       <div className="splash-top" />
-      
+
       {!split && firstVisit && (
         <div className="loading-line-wrapper">
           <div className="loading-line" />
