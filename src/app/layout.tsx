@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import "../styles/global.css";
 import Navbar from "@/components/navbar/Navbar";
+import LenisProvider from "@/components/providers/LenisProvider";
 
 export const metadata: Metadata = {
   title: {
@@ -67,8 +68,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="font-poppins">
       <body suppressHydrationWarning>
+        <LenisProvider>
           <Navbar />
-          {children}
+        </LenisProvider>
+        {children}
       </body>
     </html>
   );

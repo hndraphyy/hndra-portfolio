@@ -9,7 +9,7 @@ export default function HeroSection() {
   return (
     <SectionWrapper className="flex items-center justify-center h-screen bg-background relative overflow-hidden">
       <div className="absolute top-[-100px] right-[-100px] w-[400px] h-[400px] bg-gradient-to-br from-green to-cyan-400 rounded-full blur-3xl opacity-40 animate-pulse-slow pointer-events-none z-0" />
-      <div className="absolute bottom-[100px] left-[100px] w-[330px] h-[400px] bg-gradient-to-br from-green to-cyan-400 rounded-full blur-3xl opacity-40 animate-pulse-slow pointer-events-none z-0" />
+      <div className="absolute bottom-[100px] left-[100px] w-[330px] h-[330px] bg-gradient-to-br from-green to-cyan-400 rounded-full blur-3xl opacity-40 animate-pulse-slow pointer-events-none z-0" />
       <Container>
         <div className="flex items-center justify-center">
           <div className="text-center text-white">
