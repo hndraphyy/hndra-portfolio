@@ -1,7 +1,7 @@
 "use client";
 
-import HeroSection from "@/components/sections/projects/Hero";
 import SplashOpen from "@/components/splash/SplashOpen";
+import HeroSection from "@/components/sections/projects/Hero";
 
 export default function Projects() {
   return (

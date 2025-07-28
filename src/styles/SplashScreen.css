@@ -52,11 +52,11 @@
 
 /* Animasi buka pintu */
 .splash-container.split-active .splash-top {
-  transform: translateY(-100%);
+  transform: translateY(-105%);
 }
 
 .splash-container.split-active .splash-bottom {
-  transform: translateY(100%);
+  transform: translateY(105%);
 }
 
 /* Animasi buka pintu */
