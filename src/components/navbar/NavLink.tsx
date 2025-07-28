@@ -21,7 +21,7 @@ const NavLink = ({ href, name, onClick }: NavLinkProps) => {
         onClick={onClick}
         className="group relative inline-flex items-center gap-4 text-black transition"
       >
-        <span className={`${isActive ? "text-gray-700" : ""} transition`}>
+        <span className={`${isActive ? "text-green" : ""} transition`}>
           {name}
         </span>
         <div className="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">

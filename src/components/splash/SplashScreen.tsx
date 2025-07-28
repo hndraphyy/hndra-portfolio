@@ -1,6 +1,7 @@
 "use client";
+
 import { useEffect, useState, useRef } from "react";
-import "../styles/SplashScreen.css";
+import "../../styles/SplashScreen.css";
 
 export default function SplashScreen({ onFinish }: { onFinish: () => void }) {
   const [split, setSplit] = useState(false);

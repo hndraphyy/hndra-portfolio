@@ -1,6 +1,6 @@
 "use client";
 
-import SplashScreen from "../components/SplashScreen";
+import SplashScreen from "../components/splash/SplashScreen";
 import HeroSection from "@/components/sections/home/Hero";
 import AboutSection from "@/components/sections/home/About";
 
