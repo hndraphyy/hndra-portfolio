@@ -14,7 +14,7 @@ const config: Config = {
       },
       colors: {
         background: "#0f0f11",
-        green: "#6EE7B7",
+        green: "#10B981",
       },
       keyframes: {
         slideDown: {
@@ -45,11 +45,10 @@ const config: Config = {
       animation: {
         slideDown: "slideDown 0.6s ease-in-out forwards",
         slideUp: "slideUp 0.6s ease-in-out forwards",
-        progressBar: "progressBar 1s ease-in-out forwards",
+        progressBar: "progressBar 1s ease-in-out forwards ",
         fadeInDelay: "fadeInDelay 0.5s ease-out 1.2s forwards",
         "fade-up": "fadeUp 0.8s ease-out forwards",
         "fade-delay": "fadeDelay 0.6s ease-out 0.5s forwards",
-        "pulse-slow": "pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       },
     },
   },

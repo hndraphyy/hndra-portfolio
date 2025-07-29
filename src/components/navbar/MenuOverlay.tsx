@@ -78,28 +78,28 @@ const MenuOverlay = ({ isAnimating, isOpen, onToggle }: MenuOverlayProps) => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <FaWhatsapp className="hover:text-gray-500 duration-300 transition" />
+                    <FaWhatsapp className="hover:text-green duration-300 transition" />
                   </a>
                   <a
                     href="mailto:hendraditya@example.com"
-                    target="_blank"
+                    target="_blank" 
                     rel="noopener noreferrer"
                   >
-                    <MdEmail className="hover:text-gray-500 duration-300 transition" />
+                    <MdEmail className="hover:text-green duration-300 transition" />
                   </a>
                   <a
                     href="https://github.com/namagithub"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <FaGithub className="hover:text-gray-500 duration-300 transition" />
+                    <FaGithub className="hover:text-green duration-300 transition" />
                   </a>
                   <a
                     href="https://linkedin.com/in/namalinkedin"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <FaLinkedin className="hover:text-gray-500 duration-300 transition" />
+                    <FaLinkedin className="hover:text-green duration-300 transition" />
                   </a>
                 </p>
               </div>
