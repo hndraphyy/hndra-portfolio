@@ -1,22 +1,31 @@
 "use client";
 
 import Image from "next/image";
-
 import Container from "@/components/layout/Container";
 import SectionWrapper from "@/components/layout/SectionWrapper";
+import { useScrollParallax } from "@/lib/hooks/useScrollParallax";
 
 export default function HeroSection() {
-  return (
-    <SectionWrapper className="flex items-center justify-center min-h-screen bg-background relative">
-      <Container>
-        <div className="text-white pb-14 md:pb-0">
-          <p className="text-end font-light text-gray-400 text-xl md:text-xl lg:text-4xl">
-            Frontend Developer
-          </p>
+  const { ref, textX, imageX, motion } = useScrollParallax();
 
-          <div
+  return (
+    <SectionWrapper
+      ref={ref}
+      className="flex items-center justify-center min-h-screen bg-background relative overflow-hidden"
+    >
+      <Container>
+        <div className="text-white pb-14 md:pb-0 space-y-4">
+          <motion.p
+            style={{ x: textX }}
+            className="text-end font-light text-gray-400 text-xl md:text-xl lg:text-4xl"
+          >
+            Frontend Developer
+          </motion.p>
+
+          <motion.div
             onContextMenu={(e) => e.preventDefault()}
             className="py-2 pb-4 md:py-6 select-none"
+            style={{ x: imageX }}
           >
             <Image
               src="/assets/images/nameHero.png"
@@ -27,17 +36,16 @@ export default function HeroSection() {
               draggable={false}
               priority
             />
-          </div>
+          </motion.div>
 
-          {/* <h1 className="font-bold leading-none py-2 pb-4 md:pb-2 md:py-4 text-star text-[70px] sm:text-[94px] md:text-[120px] lg:text-[140px] xl:text-[150px]">
-            <span className="text-green">Hendra</span> Aditya Pratama
-          </h1> */}
-
-          <p className="font-light text-gray-400 text-end ml-auto text-sm sm:text-base md:text-lg lg:text-xl max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">
+          <motion.p
+            style={{ x: textX }}
+            className="font-light text-gray-400 text-end ml-auto text-sm sm:text-base md:text-lg lg:text-xl max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl"
+          >
             Hi, I&apos;m Hendra Aditya Pratama. A frontend developer passionate
             about crafting responsive and clean user interfaces, based in
             Kediri, Indonesia.
-          </p>
+          </motion.p>
         </div>
       </Container>
     </SectionWrapper>

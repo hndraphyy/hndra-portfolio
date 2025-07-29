@@ -1,10 +1,10 @@
 "use client";
 
 import SplashScreen from "../components/splash/SplashScreen";
-import HeroSection from "@/components/sections/home/Hero";
-import AboutSection from "@/components/sections/home/About";
+import HeroSection from "@/components/sections/home/HeroSection";
+import AboutSection from "@/components/sections/home/AboutSection";
 
-export default function RootPage() {
+export default function Home() {
   return (
     <>
       <SplashScreen onFinish={() => {}} />
