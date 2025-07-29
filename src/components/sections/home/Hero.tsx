@@ -14,16 +14,21 @@ export default function HeroSection() {
             Frontend Developer
           </p>
 
-          <div className="py-2 pb-4 md:py-6">
+          <div
+            onContextMenu={(e) => e.preventDefault()}
+            className="py-2 pb-4 md:py-6 select-none"
+          >
             <Image
               src="/assets/images/nameHero.png"
               alt="Hendra Aditya Pratama"
               width={1600}
               height={400}
-              className="w-full h-auto object-contain"
+              className="w-full h-auto object-contain pointer-events-none"
+              draggable={false}
               priority
             />
           </div>
+
           {/* <h1 className="font-bold leading-none py-2 pb-4 md:pb-2 md:py-4 text-star text-[70px] sm:text-[94px] md:text-[120px] lg:text-[140px] xl:text-[150px]">
             <span className="text-green">Hendra</span> Aditya Pratama
           </h1> */}
