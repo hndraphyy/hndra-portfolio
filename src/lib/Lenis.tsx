@@ -1,4 +1,3 @@
-// lib/lenis.ts
 "use client";
 
 import { useEffect } from "react";

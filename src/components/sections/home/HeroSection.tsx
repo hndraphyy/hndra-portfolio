@@ -24,18 +24,34 @@ export default function HeroSection() {
 
           <motion.div
             onContextMenu={(e) => e.preventDefault()}
-            className="py-2 pb-4 md:py-6 select-none"
+            className="pb-3 md:py-4 select-none"
             style={{ x: imageX }}
           >
-            <Image
-              src="/assets/images/nameHero.png"
-              alt="Hendra Aditya Pratama"
-              width={1600}
-              height={400}
-              className="w-full h-auto object-contain pointer-events-none"
-              draggable={false}
-              priority
-            />
+            {/* desktop */}
+            <div className="w-full md:block hidden">
+              <Image
+                src="/assets/images/svg/nameHero.svg"
+                alt="Hendra Aditya Pratama"
+                width={1920}
+                height={300}
+                className="w-full h-auto object-contain pointer-events-none select-none"
+                draggable={false}
+                priority
+              />
+            </div>
+
+            {/* mobile */}
+            <div className="w-full md:hidden block">
+              <Image
+                src="/assets/images/svg/nameHeroMobile.svg"
+                alt="Hendra Aditya Pratama"
+                width={1080}
+                height={200}
+                className="w-full h-auto object-contain pointer-events-none select-none"
+                draggable={false}
+                priority
+              />
+            </div>
           </motion.div>
 
           <motion.p
