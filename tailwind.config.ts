@@ -41,6 +41,10 @@ const config: Config = {
           "0%": { opacity: "0", transform: "translateY(10px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
+        glow: {
+          "0%, 100%": { transform: "scale(0.9)", opacity: "0.4" },
+          "50%": { transform: "scale(1)", opacity: "0.5" },
+        },
       },
       animation: {
         slideDown: "slideDown 0.6s ease-in-out forwards",
@@ -49,6 +53,7 @@ const config: Config = {
         fadeInDelay: "fadeInDelay 0.5s ease-out 1.2s forwards",
         "fade-up": "fadeUp 0.8s ease-out forwards",
         "fade-delay": "fadeDelay 0.6s ease-out 0.5s forwards",
+        glow: "glow 4s ease-in-out infinite",
       },
     },
   },
