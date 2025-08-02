@@ -46,13 +46,13 @@ const Navbar = () => {
         <div className="flex items-center justify-between py-4">
           <Link
             href="/"
-            className="text-sm md:text-xl 2xl:text-2xl font-light text-white"
+            className="text-xl md:text-xl 2xl:text-2xl font-light text-white"
           >
             Hndra
           </Link>
           <button
             onClick={toggleMenu}
-            className="text-md md:text-2xl 2xl:text-3xl font-extralight text-white transition-colors duration-300"
+            className="text-xl md:text-2xl 2xl:text-3xl font-extralight text-white transition-colors duration-300"
           >
             <FiMenu />
           </button>

@@ -44,7 +44,7 @@ const MenuOverlay = ({ isAnimating, isOpen, onToggle }: MenuOverlayProps) => {
       >
         <button
           onClick={onToggle}
-          className="absolute px-4 sm:px-6 lg:px-8 right-0 top-5 text-md md:text-2xl 2xl:text-3xl font-extralight text-black"
+          className="absolute px-4 sm:px-6 lg:px-8 right-0 top-5 text-xl md:text-2xl 2xl:text-3xl font-extralight text-black"
         >
           <FiX />
         </button>

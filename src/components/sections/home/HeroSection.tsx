@@ -17,7 +17,7 @@ export default function HeroSection() {
       <div className="absolute bottom-[50px] left-[-100px] w-[180px] md:w-[180px] h-[270px] md:h-[370px] bg-white rounded-r-full blur-[90px] opacity-70 pointer-events-none z-0 animate-glow" />
       <div className="absolute bottom-[-100px] left-[50px] w-[280px] md:w-[400px] h-[230px] md:h-[220px] bg-green rounded-t-full blur-[90px] opacity-70 pointer-events-none z-0 animate-glow" />
       <Container>
-        <div className="text-white pb-14 md:pb-0 space-y-4">
+        <div className="text-white pb-[3rem] md:pb-0 space-y-4">
           <motion.p
             style={{ x: textX }}
             className="text-end font-light text-gray-400 text-2xl md:text-xl lg:text-4xl"

@@ -1,4 +1,3 @@
-// src/lib/hooks/useScrollParallax.ts
 "use client";
 
 import { useRef } from "react";
