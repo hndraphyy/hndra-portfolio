@@ -42,8 +42,12 @@ const config: Config = {
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
         glow: {
-          "0%, 100%": { transform: "scale(0.9)", opacity: "0.4" },
-          "50%": { transform: "scale(1)", opacity: "0.5" },
+          "0%, 100%": {
+            opacity: "0.3",
+          },
+          "50%": {
+            opacity: "0.4",
+          },
         },
       },
       animation: {
