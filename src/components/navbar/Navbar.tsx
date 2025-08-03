@@ -37,7 +37,7 @@ const Navbar = () => {
         isOpen
           ? "h-screen bg-transparent border-black/30"
           : isScrolled
-          ? "bg-[rgba(0,0,0,0.4)] border-black/30"
+          ? "bg-[rgba(0,0,0,0.71)] border-black/30"
           : "bg-transparent border-transparent"
       } transition-colors duration-300 ease-in-out`}
       style={isOpen ? { transition: "none" } : {}}

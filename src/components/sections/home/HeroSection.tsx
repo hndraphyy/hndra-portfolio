@@ -28,7 +28,38 @@ export default function HeroSection() {
       />
 
       <Container>
-        <div className="text-white pb-[3rem] md:pb-0 space-y-4">
+        {/* mobile */}
+        <div className="text-white pb-[3rem] md:pb-0 space-y-4 block md:hidden">
+          <p className="text-end font-light text-gray-400 text-2xl md:text-xl lg:text-4xl">
+            Frontend Developer
+          </p>
+
+          <div
+            onContextMenu={(e) => e.preventDefault()}
+            className="pb-3 md:py-4 select-none"
+          >
+            <div className="w-full md:hidden block">
+              <Image
+                src="/assets/images/svg/nameHeroMobile.svg"
+                alt="Hendra Aditya Pratama"
+                width={1080}
+                height={200}
+                className="w-full h-auto object-contain pointer-events-none select-none"
+                draggable={false}
+                priority
+              />
+            </div>
+          </div>
+
+          <p className="font-light text-gray-400 text-end ml-auto text-sm sm:text-base md:text-lg lg:text-xl max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">
+            Hi, I&apos;m Hendra Aditya Pratama. A frontend developer passionate
+            about crafting responsive and clean user interfaces, based in
+            Kediri, Indonesia.
+          </p>
+        </div>
+
+        {/* desktop */}
+        <div className="text-white pb-[3rem] md:pb-0 space-y-4 hidden md:block">
           <motion.p
             style={{ x: textX }}
             className="text-end font-light text-gray-400 text-2xl md:text-xl lg:text-4xl"
@@ -48,19 +79,6 @@ export default function HeroSection() {
                 alt="Hendra Aditya Pratama"
                 width={1920}
                 height={300}
-                className="w-full h-auto object-contain pointer-events-none select-none"
-                draggable={false}
-                priority
-              />
-            </div>
-
-            {/* mobile */}
-            <div className="w-full md:hidden block">
-              <Image
-                src="/assets/images/svg/nameHeroMobile.svg"
-                alt="Hendra Aditya Pratama"
-                width={1080}
-                height={200}
                 className="w-full h-auto object-contain pointer-events-none select-none"
                 draggable={false}
                 priority
