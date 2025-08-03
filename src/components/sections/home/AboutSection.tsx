@@ -26,7 +26,7 @@ export default function AboutSection() {
           <div className="relative">
             <Link
               href="/about"
-              className="group relative inline-block overflow-hidden px-5 py-2 text-md md:text-xl font-light text-white bg-green"
+              className="group relative inline-block overflow-hidden px-5 py-2 text-md md:text-xl font-light text-black bg-green"
             >
               <span className="relative z-10 group-hover:text-green transition-colors duration-700 ease-in-out">
                 About Me
