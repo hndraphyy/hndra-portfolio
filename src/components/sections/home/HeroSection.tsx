@@ -34,6 +34,7 @@ export default function HeroSection() {
             Frontend Developer
           </p>
 
+
           <div
             onContextMenu={(e) => e.preventDefault()}
             className="pb-3 md:py-4 select-none"

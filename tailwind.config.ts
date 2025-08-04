@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  darkMode: "class",
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -15,6 +16,7 @@ const config: Config = {
       colors: {
         background: "#0f0f11",
         green: "#10B981",
+        grayCustom: "#b0b0b0",
       },
       keyframes: {
         slideDown: {
