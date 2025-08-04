@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useMouseParallax } from "@/lib/hooks/useMouseParallax";
 import { LinkButton } from "@/components/ui/Button";
+import { Mail, Download } from "lucide-react";
 
 import Container from "@/components/layout/Container";
 import SectionWrapper from "@/components/layout/SectionWrapper";
@@ -16,7 +17,7 @@ export default function AboutSection() {
         ABOUT
       </span>
       <Container className="grid grid-cols-1 gap-9 md:gap-20">
-        <div className="md:flex justify-between items-center space-y-8">
+        <div className="md:flex justify-between items-center">
           <div>
             <h2 className="text-5xl md:text-6xl lg:text-8xl font-light text-green pb-5">
               {aboutConfig.heading}
@@ -25,15 +26,12 @@ export default function AboutSection() {
               {aboutConfig.desc}
             </p>
           </div>
-          <div className="relative">
+          <div className="relative mt-8">
             <LinkButton href="/about">About Me</LinkButton>
           </div>
         </div>
         <div
-          className="h-96 w-full bg-cover bg-center bg-no-repeat relative flex items-center justify-center overflow-hidden"
-          style={{
-            backgroundImage: "url('/assets/images/homepage/bgAbout.webp')",
-          }}
+          className="h-96 w-full bg-cover bg-grayCustom bg-center bg-no-repeat relative flex items-center justify-center overflow-hidden"
           ref={ref}
         >
           <div
@@ -51,6 +49,35 @@ export default function AboutSection() {
               draggable={false}
               priority
             />
+          </div>
+        </div>
+        <div className="md:flex justify-between">
+          <p className="text-gray-400 text-base text-md sm:text-lg leading-relaxed md:max-w-md lg:max-w-2xl">
+            {aboutConfig.textCTA}
+          </p>
+          <div className="mt-8 md:mt-0">
+            <div className="flex gap-2">
+              <a
+                href="/assets/pdf/Hendra_Aditya_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                download
+                className="group relative inline-block px-5 py-2 text-md md:text-xl font-light text-white bg-transparent border-[1px] overflow-hidden"
+              >
+                <span className="relative z-10 flex items-center gap-2 transition-colors duration-700 ease-in-out group-hover:text-green">
+                  <Download size={18} />
+                  Resume
+                </span>
+                <span className="absolute inset-0 z-0 bg-white -translate-x-full transition-transform duration-[700ms] ease-in-out group-hover:translate-x-0"></span>
+              </a>
+
+              <LinkButton href="mailto:hendraaditya1913@gmail.com">
+                <span className="flex items-center gap-2">
+                  <Mail size={18} />
+                  Contact
+                </span>
+              </LinkButton>
+            </div>
           </div>
         </div>
       </Container>

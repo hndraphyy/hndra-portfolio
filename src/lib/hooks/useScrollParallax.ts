@@ -4,8 +4,8 @@ import { useRef } from "react";
 import { useScroll, useTransform, motion } from "framer-motion";
 
 export function useScrollParallax({
-  textRange = [0, 400],
-  imageRange = [0, -400],
+  textRange = [0, 800],
+  imageRange = [0, -800],
   shapeRange = [0, 400], // baru untuk Y-axis
 } = {}) {
   const ref = useRef(null);

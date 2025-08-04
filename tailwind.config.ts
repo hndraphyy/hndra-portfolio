@@ -16,7 +16,7 @@ const config: Config = {
       colors: {
         background: "#0f0f11",
         green: "#10B981",
-        grayCustom: "#b0b0b0",
+        grayCustom: "#717171",
       },
       keyframes: {
         slideDown: {
