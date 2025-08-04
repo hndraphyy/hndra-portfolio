@@ -12,7 +12,7 @@ import aboutConfig from "@/configs/home/about";
 export default function AboutSection() {
   const { ref, offset } = useMouseParallax(10);
   return (
-    <SectionWrapper className="flex min-h-screen bg-background relative overflow-hidden">
+    <SectionWrapper className="pt-16 flex min-h-screen bg-background relative overflow-hidden">
       <span className="text-white absolute -right-14 text-[100px] md:text-[250px] top-6 md:top-0 opacity-[0.02]">
         ABOUT
       </span>
@@ -31,7 +31,7 @@ export default function AboutSection() {
           </div>
         </div>
         <div
-          className="h-96 w-full bg-cover bg-grayCustom bg-center bg-no-repeat relative flex items-center justify-center overflow-hidden"
+          className="h-96 w-full bg-cover bg-grayCustom bg-center bg-no-repeat relative flex items-center justify-center overflow-hidden rounded-b-[60%]"
           ref={ref}
         >
           <div
@@ -51,7 +51,7 @@ export default function AboutSection() {
             />
           </div>
         </div>
-        <div className="md:flex justify-between">
+        <div className="md:flex justify-between gap-5">
           <p className="text-gray-400 text-base text-md sm:text-lg leading-relaxed md:max-w-md lg:max-w-2xl">
             {aboutConfig.textCTA}
           </p>
