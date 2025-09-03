@@ -3,11 +3,7 @@
 import { useRef } from "react";
 import { useScroll, useTransform, motion } from "framer-motion";
 
-export function useScrollParallax({
-  textRange = [0, 800],
-  imageRange = [0, -800],
-  shapeRange = [0, 400], // baru untuk Y-axis
-} = {}) {
+export function useScrollParallax({ shapeRange = [0, 400] } = {}) {
   const ref = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -15,15 +11,11 @@ export function useScrollParallax({
     offset: ["start start", "end start"],
   });
 
-  const textX = useTransform(scrollYProgress, [0, 1], textRange);
-  const imageX = useTransform(scrollYProgress, [0, 1], imageRange);
   const shapeY = useTransform(scrollYProgress, [0, 1], shapeRange);
 
   return {
     ref,
-    textX,
-    imageX,
     shapeY,
-    motion, // biar simple
+    motion,
   };
 }

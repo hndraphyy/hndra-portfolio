@@ -6,7 +6,7 @@ import SectionWrapper from "@/components/layout/SectionWrapper";
 import { useScrollParallax } from "@/lib/hooks/useScrollParallax";
 
 export default function HeroSection() {
-  const { ref, textX, imageX, shapeY, motion } = useScrollParallax();
+  const { ref, shapeY, motion } = useScrollParallax();
 
   return (
     <SectionWrapper
@@ -33,7 +33,6 @@ export default function HeroSection() {
           <p className="text-end font-light text-gray-400 text-2xl md:text-xl lg:text-4xl">
             Frontend Developer
           </p>
-
 
           <div
             onContextMenu={(e) => e.preventDefault()}
@@ -62,7 +61,7 @@ export default function HeroSection() {
         {/* desktop */}
         <div className="text-white pb-[3rem] md:pb-0 space-y-4 hidden md:block">
           <motion.p
-            style={{ x: textX }}
+            style={{ y: shapeY }}
             className="text-end font-light text-gray-400 text-2xl md:text-xl lg:text-4xl"
           >
             Frontend Developer
@@ -71,7 +70,7 @@ export default function HeroSection() {
           <motion.div
             onContextMenu={(e) => e.preventDefault()}
             className="pb-3 md:py-4 select-none"
-            style={{ x: imageX }}
+            style={{ y: shapeY }}
           >
             {/* desktop */}
             <div className="w-full md:block hidden">
@@ -88,7 +87,7 @@ export default function HeroSection() {
           </motion.div>
 
           <motion.p
-            style={{ x: textX }}
+            style={{ y: shapeY }}
             className="font-light text-gray-400 text-end ml-auto text-sm sm:text-base md:text-lg lg:text-xl max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl"
           >
             Hi, I&apos;m Hendra Aditya Pratama. A frontend developer passionate
