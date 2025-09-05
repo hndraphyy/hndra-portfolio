@@ -31,11 +31,11 @@ export default function AboutSection() {
           </div>
         </div>
         <div
-          className="h-96 w-full bg-cover bg-grayCustom bg-center bg-no-repeat relative flex items-center justify-center overflow-hidden rounded-b-[60%]"
+          className="h-96 w-full bg-cover bg-grayCustom bg-center bg-no-repeat relative flex items-center justify-center overflow-hidden"
           ref={ref}
         >
           <div
-            className="h-full w-auto flex items-end transition-transform duration-700 ease-out"
+            className="h-full w-auto flex justify-center items-end transition-transform duration-700 ease-out"
             style={{
               transform: `translate(${offset.x}px, ${offset.y}px)`,
             }}
@@ -45,7 +45,7 @@ export default function AboutSection() {
               alt="Hendra Aditya Pratama"
               width={780}
               height={200}
-              className="h-full w-auto object-contain object-top pointer-events-none select-none rounded-t-full z-20"
+              className="h-full w-[80%] md:w-auto object-contain object-top pointer-events-none select-none rounded-t-full z-20"
               draggable={false}
               priority
             />
