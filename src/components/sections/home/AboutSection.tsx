@@ -45,7 +45,7 @@ export default function AboutSection() {
               alt="Hendra Aditya Pratama"
               width={780}
               height={200}
-              className="h-full w-[80%] md:w-auto object-contain object-top pointer-events-none select-none rounded-t-full z-20"
+              className="md:h-full w-[80%] md:w-auto object-contain object-top pointer-events-none select-none rounded-t-full z-20"
               draggable={false}
               priority
             />

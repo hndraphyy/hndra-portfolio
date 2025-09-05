@@ -13,18 +13,24 @@ export default function HeroSection() {
       ref={ref}
       className="flex items-center justify-center min-h-screen bg-background relative overflow-hidden"
     >
+      {/* mobile */}
+      <div className="block md:hidden absolute top-[70px] left-[-100px] md:left-[inherit] md:right-[-100px] w-[140px] md:w-[180px] h-[140px] md:h-[330px] bg-green rounded-l-full blur-[90px] opacity-70 pointer-events-none z-0 animate-glow"></div>
+      <div className="block md:hidden absolute bottom-[50px] left-[-100px] w-[180px] md:w-[180px] h-[270px] md:h-[370px] bg-white rounded-r-full blur-[90px] opacity-70 pointer-events-none z-0 animate-glow"></div>
+      <div className=" block md:hidden absolute bottom-[-100px] left-[50px] w-[280px] md:w-[400px] h-[230px] md:h-[220px] bg-green rounded-t-full blur-[90px] opacity-70 pointer-events-none z-0 animate-glow"></div>
+
+      {/* desktop */}
       <motion.div
         style={{ y: shapeY }}
-        className="absolute top-[70px] left-[-100px] md:left-[inherit] md:right-[-100px] w-[140px] md:w-[180px] h-[140px] md:h-[330px] bg-green rounded-l-full blur-[90px] opacity-70 pointer-events-none z-0 animate-glow"
+        className="hidden md:block absolute top-[70px] left-[-100px] md:left-[inherit] md:right-[-100px] w-[140px] md:w-[180px] h-[140px] md:h-[330px] bg-green rounded-l-full blur-[90px] opacity-70 pointer-events-none z-0 animate-glow"
       />
       <motion.div
         style={{ y: shapeY }}
-        className="absolute bottom-[50px] left-[-100px] w-[180px] md:w-[180px] h-[270px] md:h-[370px] bg-white rounded-r-full blur-[90px] opacity-70 pointer-events-none z-0 animate-glow"
+        className="hidden md:block absolute bottom-[50px] left-[-100px] w-[180px] md:w-[180px] h-[270px] md:h-[370px] bg-white rounded-r-full blur-[90px] opacity-70 pointer-events-none z-0 animate-glow"
       />
 
       <motion.div
         style={{ y: shapeY }}
-        className="absolute bottom-[-100px] left-[50px] w-[280px] md:w-[400px] h-[230px] md:h-[220px] bg-green rounded-t-full blur-[90px] opacity-70 pointer-events-none z-0 animate-glow"
+        className="hidden md:block absolute bottom-[-100px] left-[50px] w-[280px] md:w-[400px] h-[230px] md:h-[220px] bg-green rounded-t-full blur-[90px] opacity-70 pointer-events-none z-0 animate-glow"
       />
 
       <Container>

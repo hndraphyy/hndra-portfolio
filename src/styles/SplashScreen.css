@@ -18,7 +18,7 @@
 }
 
 .loading-line-wrapper {
-  height: 3px;
+  height: 1.5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +30,7 @@
 /* Loading line */
 .loading-line {
   width: 8px;
-  height: 3px;
+  height: 1.5px;
   background: black;
   animation: grow-line 2s ease-in-out forwards;
 }
