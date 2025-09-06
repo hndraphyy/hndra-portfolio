@@ -22,36 +22,55 @@ export default function ProjectsSection() {
       ref={ref}
       className="flex min-h-screen bg-background relative overflow-hidden"
     >
-      <Container className="grid grid-cols-1 gap-9 md:gap-20 relative">
+      <Container className="flex flex-col gap-8 md:gap-20">
         <div className="relative">
-          <h2 className="text-5xl md:text-6xl lg:text-9xl font-light text-white pb-5">
+          <h2 className="text-5xl md:text-6xl lg:text-9xl font-light text-white pt-4">
             {projectConfig.heading}
           </h2>
 
           <motion.div
             style={{ y: arrowY }}
-            className="absolute right-0 -top-24 z-[1]"
+            className="absolute right-0 -top-9 md:-top-24 z-[1]"
           >
             <Image
               src="/assets/images/svg/arrow-down.svg"
               alt="Arrow Down"
               width={100}
               height={100}
-              className="opacity-[0.1] w-[80px] md:w-[200px]"
+              className="opacity-[0.1] w-[70px] md:w-[200px]"
             />
           </motion.div>
         </div>
 
         <div className="flex flex-col gap-8 md:gap-20 relative z-[2]">
+          {/* desktop */}
           {projectConfig.projects.map((project, index) => (
             <Link
               href={project.link}
               key={index}
-              className="w-full block group"
+              className="w-full group hidden md:block"
             >
               <Image
                 src={project.image}
                 alt={project.title}
+                width={1200}
+                height={600}
+                className="w-full object-contain object-top pointer-events-none select-none"
+                draggable={false}
+                priority
+              />
+            </Link>
+          ))}
+          {/* mobile */}
+          {projectConfig.projectsMobile.map((projectsMobile, index) => (
+            <Link
+              href={projectsMobile.link}
+              key={index}
+              className="w-full group block md:hidden"
+            >
+              <Image
+                src={projectsMobile.image}
+                alt={projectsMobile.title}
                 width={1200}
                 height={600}
                 className="w-full object-contain object-top pointer-events-none select-none"

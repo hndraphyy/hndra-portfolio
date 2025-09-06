@@ -11,14 +11,15 @@
 
 .splash-top,
 .splash-bottom {
-  height: calc(50% - 1.5px);
+  /* height: calc(50% - 1px); */
+  height: 50%;
   background: white;
   transform: translateY(0);
   transition: transform 1s ease-in-out;
 }
 
 .loading-line-wrapper {
-  height: 1.5px;
+  height: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +31,7 @@
 /* Loading line */
 .loading-line {
   width: 8px;
-  height: 1.5px;
+  height: 2px;
   background: black;
   animation: grow-line 2s ease-in-out forwards;
 }

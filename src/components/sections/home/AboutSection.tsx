@@ -12,11 +12,11 @@ import aboutConfig from "@/configs/home/about";
 export default function AboutSection() {
   const { ref, offset } = useMouseParallax(10);
   return (
-    <SectionWrapper className="pt-16 flex min-h-screen bg-background relative overflow-hidden">
+    <SectionWrapper className="pt-16 flex bg-background relative overflow-hidden">
       <span className="text-white absolute -right-14 text-[100px] md:text-[250px] top-6 md:top-0 opacity-[0.02]">
         ABOUT
       </span>
-      <Container className="grid grid-cols-1 gap-9 md:gap-20">
+      <Container className="flex flex-col gap-8 md:gap-20">
         <div className="md:flex justify-between items-center">
           <div>
             <h2 className="text-5xl md:text-6xl lg:text-8xl font-light text-green pb-5">

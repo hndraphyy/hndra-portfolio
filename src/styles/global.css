@@ -8,3 +8,10 @@ html,
 body {
   background: transparent !important;
 }
+
+@media (min-width: 1920px) {
+  .big {
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
+  }
+}
