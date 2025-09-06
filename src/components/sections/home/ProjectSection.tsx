@@ -3,6 +3,7 @@
 import { useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+
 import Container from "@/components/layout/Container";
 import SectionWrapper from "@/components/layout/SectionWrapper";
 import projectConfig from "@/configs/home/projects";
@@ -22,7 +23,7 @@ export default function ProjectsSection() {
       ref={ref}
       className="flex min-h-screen bg-background relative overflow-hidden"
     >
-      <Container className="flex flex-col gap-8 md:gap-20">
+      <Container className="flex flex-col gap-8 md:gap-16 lg:gap-20">
         <div className="relative">
           <h2 className="text-5xl md:text-6xl lg:text-9xl font-light text-white pt-4">
             {projectConfig.heading}
@@ -42,7 +43,7 @@ export default function ProjectsSection() {
           </motion.div>
         </div>
 
-        <div className="flex flex-col gap-8 md:gap-20 relative z-[2]">
+        <div className="flex flex-col gap-8 md:gap-16 lg:20 relative z-[2]">
           {/* desktop */}
           {projectConfig.projects.map((project, index) => (
             <Link
@@ -79,6 +80,14 @@ export default function ProjectsSection() {
               />
             </Link>
           ))}
+          <div className="flex justify-end">
+            <Link
+              href="/projects"
+              className="text-5xl md:text-6xl lg:text-8xl font-light text-white hover:-skew-x-12 hover:text-green underline duration-500"
+            >
+              Projects
+            </Link>
+          </div>
         </div>
       </Container>
     </SectionWrapper>

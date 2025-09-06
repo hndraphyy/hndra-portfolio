@@ -2,12 +2,12 @@
 
 import Image from "next/image";
 import { useMouseParallax } from "@/lib/hooks/useMouseParallax";
-import { LinkButton } from "@/components/ui/Button";
 import { Mail, Download } from "lucide-react";
 
 import Container from "@/components/layout/Container";
 import SectionWrapper from "@/components/layout/SectionWrapper";
 import aboutConfig from "@/configs/home/about";
+import { LinkButton } from "@/components/ui/Button";
 
 export default function AboutSection() {
   const { ref, offset } = useMouseParallax(10);
@@ -16,7 +16,7 @@ export default function AboutSection() {
       <span className="text-white absolute -right-14 text-[100px] md:text-[250px] top-6 md:top-0 opacity-[0.02]">
         ABOUT
       </span>
-      <Container className="flex flex-col gap-8 md:gap-20">
+      <Container className="flex flex-col gap-8 md:gap-16 lg:gap-20">
         <div className="md:flex justify-between items-center">
           <div>
             <h2 className="text-5xl md:text-6xl lg:text-8xl font-light text-green pb-5">

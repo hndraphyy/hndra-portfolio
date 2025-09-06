@@ -12,7 +12,7 @@ const Container = forwardRef<HTMLDivElement, ContainerProps>(
     return (
       <div
         ref={ref}
-        className={`mx-auto w-full max-w-screen-xl px-7 sm:px-16 md:px-20 lg:px-28 xl:px-20 big relative z-20 ${className}`}
+        className={`mx-auto w-full max-w-screen-xl py-7 px-7 sm:px-16 md:px-20 lg:px-28 xl:px-20 big relative z-20 ${className}`}
         {...rest}
       >
         {children}

@@ -1,8 +1,9 @@
 // app/layout.tsx
 import type { Metadata } from "next";
 import "../styles/global.css";
-import Navbar from "@/components/navbar/Navbar";
 import LenisProvider from "@/components/providers/LenisProvider";
+import Navbar from "@/components/navbar/Navbar";
+import Footer from "@/components/footer/Footer";
 
 export const metadata: Metadata = {
   title: {
@@ -72,6 +73,7 @@ export default function RootLayout({
           <Navbar />
         </LenisProvider>
         {children}
+        <Footer />
       </body>
     </html>
   );
