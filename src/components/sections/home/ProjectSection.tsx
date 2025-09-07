@@ -24,6 +24,7 @@ export default function ProjectsSection() {
       className="flex min-h-screen bg-background relative overflow-hidden"
     >
       <Container className="flex flex-col gap-8 md:gap-16 lg:gap-20 relative">
+        {/* Heading */}
         <div className="relative">
           <h2 className="text-5xl md:text-6xl lg:text-9xl font-light text-white pt-4">
             {projectConfig.heading}
@@ -43,13 +44,14 @@ export default function ProjectsSection() {
           </motion.div>
         </div>
 
-        <div className="flex flex-col gap-8 md:gap-16 lg:20 relative z-[2]">
+        {/* Project Items */}
+        <div className="flex flex-col gap-8 md:gap-16 lg:gap-20 relative z-[2]">
           {/* desktop */}
           {projectConfig.projects.map((project, index) => (
             <Link
               href={project.link}
               key={index}
-              className="w-full group hidden md:block"
+              className="w-full relative overflow-hidden rounded-lg group md:block hidden"
             >
               <Image
                 src={project.image}
@@ -60,14 +62,21 @@ export default function ProjectsSection() {
                 draggable={false}
                 priority
               />
+              <div className="absolute inset-0 bg-black/60" />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <span className="text-white text-4xl font-semibold absolute bottom-12 left-12">
+                  {project.title}
+                </span>
+              </div>
             </Link>
           ))}
+
           {/* mobile */}
           {projectConfig.projectsMobile.map((projectsMobile, index) => (
             <Link
               href={projectsMobile.link}
               key={index}
-              className="w-full group block md:hidden"
+              className="w-full relative overflow-hidden rounded-lg group md:hidden block"
             >
               <Image
                 src={projectsMobile.image}
@@ -78,8 +87,15 @@ export default function ProjectsSection() {
                 draggable={false}
                 priority
               />
+              <div className="absolute inset-0 bg-black/60" />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <span className="text-white text-2xl font-semibold absolute bottom-5 left-5">
+                  {projectsMobile.title}
+                </span>
+              </div>
             </Link>
           ))}
+
           <div className="flex justify-end">
             <Link
               href="/projects"

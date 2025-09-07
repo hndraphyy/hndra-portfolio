@@ -11,7 +11,7 @@ export default function ProjectsMeSection() {
   return (
     <SectionWrapper className="flex min-h-screen bg-background relative overflow-hidden">
       <Container className="-mt-10 mb-5">
-        <div className="flex flex-col gap-8 md:gap-16 lg:20 relative z-[2]">
+        <div className="flex flex-col gap-10 md:gap-16 lg:20 relative z-[2]">
           {/* desktop */}
           {projectConfigPage.projects.map((project, index) => (
             <Link
@@ -30,7 +30,7 @@ export default function ProjectsMeSection() {
               />
               {/* Overlay */}
               <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <span className="text-white text-4xl font-semibold opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 absolute bottom-8 left-8">
+                <span className="text-white text-4xl font-semibold opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 absolute bottom-12 left-12">
                   {project.title}
                 </span>
               </div>
@@ -55,7 +55,7 @@ export default function ProjectsMeSection() {
               />
               {/* Overlay */}
               <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <span className="text-white text-xl font-semibold opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 absolute bottom-5 left-5">
+                <span className="text-white text-2xl font-semibold opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 absolute bottom-5 left-5">
                   {projectsMobile.title}
                 </span>
               </div>

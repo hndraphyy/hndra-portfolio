@@ -31,7 +31,7 @@ export default function AboutSection() {
           </div>
         </div>
         <div
-          className="h-96 w-full bg-cover bg-grayCustom bg-center bg-no-repeat relative flex items-center justify-center overflow-hidden"
+          className="h-96 w-full bg-cover bg-grayCustom bg-center bg-no-repeat relative flex items-center justify-center overflow-hidden rounded-lg"
           ref={ref}
         >
           {/* left */}

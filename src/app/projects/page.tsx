@@ -1,15 +1,10 @@
-"use client";
+import type { Metadata } from "next";
+import ProjectsPage from "@/components/page/ProjectsPage";
 
-import SplashOpen from "@/components/splash/SplashOpen";
-import HeroSection from "@/components/sections/projects/HeroSection";
-import ProjectsMeSection from "@/components/sections/projects/ProjectsMeSection";
+export const metadata: Metadata = {
+  title: "Projects",
+};
 
 export default function Projects() {
-  return (
-    <>
-      <SplashOpen onFinish={() => {}} />
-      <HeroSection />
-      <ProjectsMeSection />
-    </>
-  );
+  return <ProjectsPage />;
 }

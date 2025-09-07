@@ -7,10 +7,10 @@ import Footer from "@/components/footer/Footer";
 
 export const metadata: Metadata = {
   title: {
-    default: "Home | Hendra Aditya",
+    default: "Hendra Aditya",
     template: "%s | Hendra Aditya",
   },
-  description: "Portfolio hendra aditya",
+  description: "Portfolio Hendra Aditya",
   keywords: [
     "Hendra Aditya",
     "Hendra Aditya Pratama",
