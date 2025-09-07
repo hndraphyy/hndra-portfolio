@@ -23,7 +23,7 @@ export default function ProjectsSection() {
       ref={ref}
       className="flex min-h-screen bg-background relative overflow-hidden"
     >
-      <Container className="flex flex-col gap-8 md:gap-16 lg:gap-20">
+      <Container className="flex flex-col gap-8 md:gap-16 lg:gap-20 relative">
         <div className="relative">
           <h2 className="text-5xl md:text-6xl lg:text-9xl font-light text-white pt-4">
             {projectConfig.heading}

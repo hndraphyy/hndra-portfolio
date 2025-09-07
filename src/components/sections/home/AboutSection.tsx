@@ -16,7 +16,7 @@ export default function AboutSection() {
       <span className="text-white absolute -right-14 text-[100px] md:text-[250px] top-6 md:top-0 opacity-[0.02]">
         ABOUT
       </span>
-      <Container className="flex flex-col gap-8 md:gap-16 lg:gap-20">
+      <Container className="flex flex-col gap-8 md:gap-16 lg:gap-20 relative">
         <div className="md:flex justify-between items-center">
           <div>
             <h2 className="text-5xl md:text-6xl lg:text-8xl font-light text-green pb-5">

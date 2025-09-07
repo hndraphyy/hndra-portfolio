@@ -33,7 +33,7 @@ export default function HeroSection() {
         className="hidden md:block absolute bottom-[-100px] left-[50px] w-[280px] md:w-[400px] h-[230px] md:h-[220px] bg-green rounded-t-full blur-[90px] opacity-70 pointer-events-none z-0 animate-glow"
       />
 
-      <Container>
+      <Container className="relative">
         {/* mobile */}
         <div className="text-white pb-[2rem] md:pb-0 space-y-4 block md:hidden">
           <p className="text-end font-light text-gray-400 text-2xl md:text-xl lg:text-4xl">

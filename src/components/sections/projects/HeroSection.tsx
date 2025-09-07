@@ -1,18 +1,29 @@
 "use client";
 
+import { useScrollParallax } from "@/lib/hooks/useScrollParallax";
+import SectionWrapper from "@/components/layout/SectionWrapper";
+import Container from "@/components/layout/Container";
+
 export default function HeroSection() {
+  const { ref, shapeYall, filter, opacity, motion } = useScrollParallax();
   return (
-    <section className="h-[100vh] bg-background relative z-40">
-      <div className="sticky top-0 h-screen flex items-center justify-center">
-        <div className="text-center px-6 sm:px-10 text-white">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight tracking-tight">
-            Projects
+    <SectionWrapper
+      ref={ref}
+      className="pt-16 flex bg-background relative overflow-hidden"
+    >
+      <Container className="flex flex-col gap-8 md:gap-16 lg:gap-20">
+        <div className="text-center text-white">
+          <h1 className="text-5xl sm:text-8xl md:text-8xl lg:text-9xl font-bold mb-4 leading-tight tracking-tight absolute -bottom-[14px] block md:hidden">
+            Projects Me
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl font-light text-gray-400">
-            project1
-          </p>
+          <motion.h1
+            style={{ y: shapeYall, filter, opacity }}
+            className="text-5xl sm:text-8xl md:text-8xl lg:text-9xl font-bold mb-4 leading-tight tracking-tight hidden md:block absolute -bottom-[2px]"
+          >
+            Projects Me
+          </motion.h1>
         </div>
-      </div>
-    </section>
+      </Container>
+    </SectionWrapper>
   );
 }

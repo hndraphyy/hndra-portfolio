@@ -16,12 +16,14 @@ export function useScrollParallax({
   });
 
   const shapeY = useTransform(scrollYProgress, [0, 1], shapeRange);
+  const shapeYall = useTransform(scrollYProgress, [0, 5], shapeRange);
   const blurValue = useTransform(scrollYProgress, [0, 1], blurRange);
   const filter = useTransform(blurValue, (b) => `blur(${b}px)`);
   const opacity = useTransform(scrollYProgress, [0, 1], opacityRange);
 
   return {
     ref,
+    shapeYall,
     shapeY,
     filter,
     opacity,
