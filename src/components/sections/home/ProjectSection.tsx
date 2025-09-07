@@ -83,7 +83,7 @@ export default function ProjectsSection() {
           <div className="flex justify-end">
             <Link
               href="/projects"
-              className="text-5xl md:text-6xl lg:text-8xl font-light text-white hover:-skew-x-12 hover:text-green underline duration-500"
+              className="text-5xl md:text-6xl lg:text-8xl font-light hover:-skew-x-12 text-green underline duration-500 custom-hover"
             >
               Projects
             </Link>

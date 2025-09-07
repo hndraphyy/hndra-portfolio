@@ -34,6 +34,65 @@ export default function AboutSection() {
           className="h-96 w-full bg-cover bg-grayCustom bg-center bg-no-repeat relative flex items-center justify-center overflow-hidden"
           ref={ref}
         >
+          {/* left */}
+          <Image
+            src="/assets/images/svg/tech/html.svg"
+            alt="Arrow Down"
+            width={80}
+            height={80}
+            className="absolute top-10 left-10 hover:scale-[1.08] duration-500"
+          />
+          <Image
+            src="/assets/images/svg/tech/tailwind.svg"
+            alt="Arrow Down"
+            width={80}
+            height={80}
+            className="absolute top-[80px] left-[280px] hover:scale-[1.08] duration-500"
+          />
+          <Image
+            src="/assets/images/svg/tech/ts.svg"
+            alt="Arrow Down"
+            width={80}
+            height={80}
+            className="absolute bottom-[100px] left-[60px] hover:scale-[1.08] duration-500"
+          />
+          <Image
+            src="/assets/images/svg/tech/sass.svg"
+            alt="Arrow Down"
+            width={80}
+            height={80}
+            className="absolute bottom-[30px] left-[230px] hover:scale-[1.08] duration-500"
+          />
+          {/* right */}
+          <Image
+            src="/assets/images/svg/tech/css.svg"
+            alt="Arrow Down"
+            width={80}
+            height={80}
+            className="absolute top-10 right-10 hover:scale-[1.08] duration-500"
+          />
+          <Image
+            src="/assets/images/svg/tech/js.svg"
+            alt="Arrow Down"
+            width={80}
+            height={80}
+            className="absolute top-[100px] right-[250px] hover:scale-[1.08] duration-500"
+          />
+          <Image
+            src="/assets/images/svg/tech/react.svg"
+            alt="Arrow Down"
+            width={80}
+            height={80}
+            className="absolute bottom-[70px] right-[70px] hover:scale-[1.08] duration-500"
+          />
+          <Image
+            src="/assets/images/svg/tech/next.svg"
+            alt="Arrow Down"
+            width={80}
+            height={80}
+            className="absolute bottom-[30px] right-[230px] hover:scale-[1.08] duration-500"
+          />
+
           <div
             className="h-full w-auto flex justify-center items-end transition-transform duration-700 ease-out"
             style={{

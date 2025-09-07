@@ -9,6 +9,10 @@ body {
   background: transparent !important;
 }
 
+.custom-hover {
+  cursor: url("../../public/assets/images/svg/cursor-custom.svg"), auto !important;
+}
+
 @media (min-width: 1920px) {
   .big {
     padding-left: 0rem !important;

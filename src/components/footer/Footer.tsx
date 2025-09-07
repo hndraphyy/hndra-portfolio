@@ -16,7 +16,7 @@ const Footer = () => {
           </Link>
         </div>
         <div className="flex justify-between flex-col lg:flex-row items-start lg:items-center gap-6 lg:gap-3">
-          <p className="text-9xl font-normal color-white opacity-[0.6]">
+          <p className="text-9xl font-normal color-white opacity-[0.6] -ml-[6px]">
             LET&apos;S TALK
           </p>
           <p className="flex gap-5 lg:gap-8">
