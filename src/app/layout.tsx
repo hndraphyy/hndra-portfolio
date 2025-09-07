@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import "../styles/global.css";
 import LenisProvider from "@/components/providers/LenisProvider";
+import ScrollToTop from "@/components/utils/ScrollToTop";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 
@@ -69,6 +70,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="font-poppins">
       <body suppressHydrationWarning>
+        <ScrollToTop />
         <LenisProvider>
           <Navbar />
         </LenisProvider>
