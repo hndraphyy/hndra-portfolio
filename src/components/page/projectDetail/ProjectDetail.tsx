@@ -4,6 +4,7 @@ import Image from "next/image";
 import SectionWrapper from "@/components/layout/SectionWrapper";
 import Container from "@/components/layout/Container";
 import SplashOpen from "@/components/splash/SplashOpen";
+import { useScrollParallax } from "@/lib/hooks/useScrollParallax";
 
 interface Project {
   slug: string;
@@ -20,24 +21,56 @@ interface ProjectDetailPageProps {
 }
 
 export default function ProjectDetailPage({ project }: ProjectDetailPageProps) {
+  const { ref, shapeY, filter, motion } = useScrollParallax();
+
   return (
     <>
       <SplashOpen onFinish={() => {}} />
 
       {/* Hero Section */}
-      <div className="relative min-h-screen w-full">
-        <Image
-          src={project.image}
-          alt={project.title}
-          fill
-          priority
-          className="object-cover object-center"
-        />
-        <div className="absolute inset-0 bg-black/60" />
-        <div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-4 text-center text-white">
-          <h1 className="mb-6 text-4xl font-bold md:text-6xl lg:text-7xl">
-            {project.title}
-          </h1>
+      {/* desktop */}
+      <div ref={ref}>
+        <div className="relative min-h-screen w-full hidden lg:block">
+          <motion.div
+            style={{ y: shapeY, filter }}
+            className="absolute inset-0"
+          >
+            <Image
+              src={project.image}
+              alt={project.title}
+              fill
+              priority
+              className="object-cover object-center"
+            />
+          </motion.div>
+          <div className="absolute inset-0 bg-black/60" />
+          <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center text-white">
+            <motion.h1
+              className="mb-6 text-4xl font-bold md:text-6xl lg:text-7xl"
+              style={{ y: shapeY }}
+            >
+              {project.title}
+            </motion.h1>
+          </div>
+        </div>
+
+        {/* mobile */}
+        <div className="relative min-h-screen w-full block lg:hidden">
+          <div className="absolute inset-0">
+            <Image
+              src={project.image}
+              alt={project.title}
+              fill
+              priority
+              className="object-cover object-center"
+            />
+          </div>
+          <div className="absolute inset-0 bg-black/60" />
+          <div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-4 text-center text-white">
+            <h1 className="mb-6 text-4xl font-bold md:text-6xl lg:text-7xl">
+              {project.title}
+            </h1>
+          </div>
         </div>
       </div>
 

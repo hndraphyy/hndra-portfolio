@@ -10,7 +10,8 @@ import projectConfigPage from "@/configs/projects/projectsList";
 export default function ProjectsMeSection() {
   return (
     <SectionWrapper className="flex min-h-screen bg-background relative overflow-hidden">
-      <Container className="-mt-10 mb-5">
+      <Container className="mt-0 my-12">
+        <div className="w-[275px] h-[10px] sm:w-[410px] md:w-[545px] lg:w-[730px] lg:h-[20px] bg-green absolute top-0"></div>
         <div className="flex flex-col gap-10 md:gap-16 lg:20 relative z-[2]">
           {/* desktop */}
           {projectConfigPage.projects.map((project, index) => (
