@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Image from "next/image";
 import { projectsDetail } from "@/configs/projects/projectsDetail";
+// import SplashOpen from "@/components/splash/SplashOpen";
 
 import SectionWrapper from "@/components/layout/SectionWrapper";
 import Container from "@/components/layout/Container";
@@ -20,7 +21,7 @@ export async function generateMetadata({
 }: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const project = projectsDetail.find((p) => p.slug === slug);
-  
+
   if (!project) return { title: "Project Not Found" };
 
   return {
@@ -37,11 +38,12 @@ export async function generateMetadata({
 export default async function ProjectDetailPage({ params }: PageProps) {
   const { slug } = await params;
   const project = projectsDetail.find((p) => p.slug === slug);
-  
+
   if (!project) return notFound();
 
   return (
     <div>
+      {/* <SplashOpen onFinish={() => {}} /> */}
       {/* Hero Section */}
       <div className="relative min-h-screen w-full">
         <Image

@@ -1,4 +1,3 @@
-// components/providers/LenisProvider.tsx
 "use client";
 
 import { useLenis } from "@/lib/Lenis";

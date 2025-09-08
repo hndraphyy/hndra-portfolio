@@ -10,7 +10,7 @@ export default function SplashOpen({ onFinish }: { onFinish: () => void }) {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setSplit(true); // mulai buka pintu
-    }, 200); // setelah grow-line selesai
+    }, 500); // setelah grow-line selesai
 
     return () => clearTimeout(timeout);
   }, []);
