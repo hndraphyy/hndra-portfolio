@@ -4,34 +4,34 @@ const projectConfig = {
     {
       title: "Eazy Cashier",
       image: "/assets/images/homepage/project1.webp",
-      link: "",
+      link: "/projects/eazy-cashier",
     },
     {
       title: "Klinin Laundry",
       image: "/assets/images/homepage/project2.webp",
-      link: "",
+      link: "/projects/klinin-laundry",
     },
     {
       title: "Moviessis",
       image: "/assets/images/homepage/project3.webp",
-      link: "",
+      link: "/projects/moviessis",
     },
   ],
   projectsMobile: [
     {
       title: "Eazy Cashier",
       image: "/assets/images/homepage/project1-mobile.webp",
-      link: "",
+      link: "/projects/eazy-cashier",
     },
     {
       title: "Klinin Laundry",
       image: "/assets/images/homepage/project2-mobile.webp",
-      link: "",
+      link: "/projects/klinin-laundry",
     },
     {
       title: "Moviessis",
       image: "/assets/images/homepage/project3-mobile.webp",
-      link: "",
+      link: "/projects/moviessis",
     },
   ],
 };
