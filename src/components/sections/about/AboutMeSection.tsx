@@ -8,7 +8,7 @@ import { aboutContent } from "@/configs/about/aboutContent";
 const AboutMeSection = () => {
   return (
     <SectionWrapper className="pt-16 flex bg-background relative overflow-hidden">
-      <Container className="flex flex-col gap-8 md:gap-16 lg:gap-20">
+      <Container className="flex flex-col gap-8 md:gap-16 lg:gap-20 -mt-10 lg:mt-0">
         <div className="w-[225px] h-[8px] sm:w-[340px] md:w-[450px] lg:w-[600px] lg:h-[20px] bg-green absolute top-0"></div>
 
         <div className="space-y-10">

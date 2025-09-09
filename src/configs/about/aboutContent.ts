@@ -40,7 +40,7 @@ export const aboutContent: AboutContent = {
   ],
   experiences: [
     {
-      name: "ORDO APPS",
+      name: "ORDO APPS, Surabaya",
       date: "Jul 2024 - Nov 2024",
       desc: [
         {
