@@ -13,12 +13,12 @@ const HeroSection = () => {
     >
       <Container className="flex flex-col gap-8 md:gap-16 lg:gap-20">
         <div className="text-center text-white">
-          <h1 className="text-5xl sm:text-8xl md:text-8xl lg:text-9xl font-bold mb-4 leading-tight tracking-tight absolute -bottom-[27px] block md:hidden">
+          <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold mb-4 leading-tight tracking-tight absolute -bottom-[14px] block md:hidden">
             About Me
           </h1>
           <motion.h1
             style={{ y: shapeYall, filter, opacity }}
-            className="text-5xl sm:text-8xl md:text-8xl lg:text-9xl font-bold mb-4 leading-tight tracking-tight hidden md:block absolute -bottom-[32px]"
+            className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold leading-tight tracking-tight hidden md:block absolute -bottom-[2px]"
           >
             About Me
           </motion.h1>

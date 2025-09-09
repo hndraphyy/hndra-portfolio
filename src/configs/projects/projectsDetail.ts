@@ -16,7 +16,7 @@ export const projectsDetail: ProjectDetail[] = [
     description:
       "Sistem kasir sederhana yang dirancang untuk membantu UMKM dalam mengelola penjualan sehari-hari. Aplikasi ini memiliki halaman kasir untuk melakukan transaksi secara cepat, fitur manajemen data barang termasuk tambah dan update stok, serta pencatatan transaksi yang rapi. Selain itu, sistem dilengkapi dengan fungsi cetak invoice sehingga memudahkan pemilik usaha dalam memberikan bukti transaksi kepada pelanggan sekaligus memonitor laporan penjualan.",
     technologies: ["HTML", "CSS", "JavaScript", "Laravel", "SASS", "Elektron"],
-    demoUrl: "https://klinin-website.vercel.app/",
+    demoUrl: "",
   },
   {
     slug: "klinin-laundry",

@@ -8,7 +8,7 @@ import SectionWrapper from "../layout/SectionWrapper";
 
 const Footer = () => {
   return (
-    <SectionWrapper className="flex bg-green relative overflow-hidden">
+    <SectionWrapper className="flex bg-green relative overflow-hidden" id="contact">
       <Container className="flex flex-col gap-6">
         <div>
           <Link href="/" className="text-3xl lg:text-5xl font-light text-black">

@@ -1,15 +1,10 @@
-"use client";
+import type { Metadata } from "next";
+import AboutPage from "@/components/page/AboutPage";
 
-import SplashOpen from "@/components/splash/SplashOpen";
-import HeroSection from "@/components/sections/about/HeroSection";
-import AboutMeSection from "@/components/sections/about/AboutMeSection";
+export const metadata: Metadata = {
+  title: "About",
+};
 
 export default function About() {
-  return (
-    <>
-      <SplashOpen onFinish={() => {}} />
-      <HeroSection />
-      <AboutMeSection />
-    </>
-  );
+  return <AboutPage />;
 }
