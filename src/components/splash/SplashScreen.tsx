@@ -10,7 +10,7 @@ export default function SplashScreen({ onFinish }: { onFinish: () => void }) {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setSplit(true); // mulai buka pintu
-    }, 2000); // setelah grow-line selesai
+    }, 500); // setelah grow-line selesai
 
     return () => clearTimeout(timeout);
   }, []);
@@ -25,9 +25,6 @@ export default function SplashScreen({ onFinish }: { onFinish: () => void }) {
   return (
     <div className={`splash-container${split ? " split-active" : ""}`}>
       <div className="splash-top" />
-      <div className={`loading-line-wrapper${split ? " hide-line" : ""}`}>
-        <div className="loading-line" />
-      </div>
       <div
         ref={bottomRef}
         className="splash-bottom"
