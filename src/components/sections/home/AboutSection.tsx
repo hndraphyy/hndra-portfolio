@@ -35,7 +35,6 @@ export default function AboutSection() {
           ref={ref}
         >
           <div className="hidden lg:block">
-            {/* left */}
             <Image
               src="/assets/images/svg/tech/html.svg"
               alt="Arrow Down"
@@ -64,7 +63,7 @@ export default function AboutSection() {
               height={80}
               className="absolute bottom-[30px] left-[230px] hover:scale-[1.08] duration-500"
             />
-            {/* right */}
+
             <Image
               src="/assets/images/svg/tech/css.svg"
               alt="Arrow Down"
@@ -106,7 +105,7 @@ export default function AboutSection() {
               alt="Hendra Aditya Pratama"
               width={780}
               height={200}
-              className="md:h-full w-[80%] md:w-auto object-contain object-top pointer-events-none select-none rounded-t-full z-20"
+              className="md:h-full w-[80%] md:w-auto object-contain object-top pointer-events-none select-none rounded-t-full z-20 mt-10"
               draggable={false}
               priority
             />
