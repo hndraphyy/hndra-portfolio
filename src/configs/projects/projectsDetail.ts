@@ -10,6 +10,22 @@ export interface ProjectDetail {
 
 export const projectsDetail: ProjectDetail[] = [
   {
+    slug: "zotural",
+    title: "Zotural",
+    image: "/assets/images/homepage/project5.webp",
+    description:
+      "Zotural adalah aplikasi dashboard berbasis web yang dirancang sebagai simulasi sistem admin panel internal sebuah perusahaan. Aplikasi ini menerapkan konsep role-based access dengan dua peran utama, yaitu Manager dan Sales Agent, yang masing-masing memiliki hak akses dan fitur berbeda. Manager berperan dalam memantau keseluruhan operasional melalui dashboard ringkasan, mengelola data karyawan, produk, transaksi, serta melihat laporan bisnis secara global. Sementara itu, Sales Agent difokuskan pada aktivitas operasional seperti mengelola data customer, membuat order, dan memantau performa penjualan pribadi. Project ini dikembangkan sebagai frontend-only application dengan data dummy.",
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React.js",
+      "Vite",
+      "TailwindCSS",
+    ],
+    demoUrl: "zotu.vercel.app",
+  },
+  {
     slug: "eazy-cashier",
     title: "Eazy Cashier",
     image: "/assets/images/homepage/project1.webp",
@@ -24,7 +40,14 @@ export const projectsDetail: ProjectDetail[] = [
     image: "/assets/images/homepage/project2.webp",
     description:
       "Landing page laundry berbasis web yang dirancang untuk memperkenalkan layanan secara profesional. Halaman ini menampilkan informasi lengkap tentang layanan yang tersedia, daftar harga, keunggulan bisnis, serta kontak yang memudahkan pelanggan untuk melakukan pemesanan. Dengan desain responsif dan modern, landing page ini membantu meningkatkan kepercayaan pelanggan sekaligus memperluas jangkauan promosi usaha laundry.",
-    technologies: ["HTML", "CSS", "JavaScript", "React.js", "TailwindCSS"],
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React.js",
+      "Vite",
+      "TailwindCSS",
+    ],
     demoUrl: "https://klinin-website.vercel.app/",
   },
   {

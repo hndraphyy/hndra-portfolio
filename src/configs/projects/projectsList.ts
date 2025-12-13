@@ -9,6 +9,11 @@ const projectConfigPage = {
   })),
   projectsMobile: [
     {
+      title: "Zotural",
+      image: "/assets/images/homepage/project5-mobile.webp",
+      link: "/projects/zotural",
+    },
+    {
       title: "Eazy Cashier",
       image: "/assets/images/homepage/project1-mobile.webp",
       link: "/projects/eazy-cashier",
