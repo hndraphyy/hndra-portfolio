@@ -23,7 +23,7 @@ export const projectsDetail: ProjectDetail[] = [
       "Vite",
       "TailwindCSS",
     ],
-    demoUrl: "zotu.vercel.app",
+    demoUrl: "https://zotu.vercel.app",
   },
   {
     slug: "eazy-cashier",
