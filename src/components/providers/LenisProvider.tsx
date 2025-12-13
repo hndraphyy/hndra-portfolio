@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext, useContext, useEffect, useRef } from "react";
-import Lenis from "@studio-freight/lenis";
+import Lenis from "lenis";
 import { usePathname } from "next/navigation";
 
 interface LenisContextType {
@@ -12,10 +12,10 @@ const LenisContext = createContext<LenisContextType>({ lenis: null });
 
 export const useLenisContext = () => useContext(LenisContext);
 
-export default function LenisProvider({ 
-  children 
-}: { 
-  children: React.ReactNode 
+export default function LenisProvider({
+  children,
+}: {
+  children: React.ReactNode;
 }) {
   const lenisRef = useRef<Lenis | null>(null);
   const pathname = usePathname();
@@ -28,7 +28,7 @@ export default function LenisProvider({
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
     });
 
-    // Scroll ke atas saat pertama kali inisialisasi
+    // Scroll ke atas 
     lenisRef.current.scrollTo(0, { immediate: true });
 
     function raf(time: number) {
