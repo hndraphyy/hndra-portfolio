@@ -5,14 +5,22 @@ import { cn } from "@/lib/utils";
 
 type LinkButtonProps = {
   href: string;
+  target?: "_blank" | "_self";
   children: React.ReactNode;
   className?: string;
 };
 
-export function LinkButton({ href, children, className }: LinkButtonProps) {
+export function LinkButton({
+  href,
+  target,
+  children,
+  className,
+}: LinkButtonProps) {
   return (
     <Link
       href={href}
+      target={target}
+      rel="noopener noreferrer"
       className={cn(
         "group relative inline-block overflow-hidden px-5 py-2 text-md md:text-xl font-light text-black bg-green",
         className

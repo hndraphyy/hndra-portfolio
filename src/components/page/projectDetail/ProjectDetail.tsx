@@ -102,10 +102,14 @@ export default function ProjectDetailPage({ project }: ProjectDetailPageProps) {
 
           <div className="flex flex-wrap gap-4">
             {project.demoUrl && (
-              <LinkButton href={project.demoUrl}>Go To Website</LinkButton>
+              <LinkButton href={project.demoUrl} target="_blank">
+                Go To Website
+              </LinkButton>
             )}
             {project.repoUrl && (
-              <LinkButton href={project.repoUrl}>View Code</LinkButton>
+              <LinkButton href={project.repoUrl} target="_blank">
+                View Code
+              </LinkButton>
             )}
           </div>
         </Container>
