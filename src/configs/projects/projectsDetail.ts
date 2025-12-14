@@ -24,7 +24,7 @@ export const projectsDetail: ProjectDetail[] = [
       "TailwindCSS",
     ],
     demoUrl: "https://zotu.vercel.app",
-    repoUrl: "https://github.com/hndraphyy/ZUTORAL",
+    repoUrl: "https://github.com/hndraphyy/ZOTURAL",
   },
   {
     slug: "eazy-cashier",
