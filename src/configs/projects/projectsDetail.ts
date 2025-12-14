@@ -24,6 +24,7 @@ export const projectsDetail: ProjectDetail[] = [
       "TailwindCSS",
     ],
     demoUrl: "https://zotu.vercel.app",
+    repoUrl: "https://github.com/hndraphyy/ZUTORAL",
   },
   {
     slug: "eazy-cashier",
@@ -33,6 +34,7 @@ export const projectsDetail: ProjectDetail[] = [
       "Sistem kasir sederhana yang dirancang untuk membantu UMKM dalam mengelola penjualan sehari-hari. Aplikasi ini memiliki halaman kasir untuk melakukan transaksi secara cepat, fitur manajemen data barang termasuk tambah dan update stok, serta pencatatan transaksi yang rapi. Selain itu, sistem dilengkapi dengan fungsi cetak invoice sehingga memudahkan pemilik usaha dalam memberikan bukti transaksi kepada pelanggan sekaligus memonitor laporan penjualan.",
     technologies: ["HTML", "CSS", "JavaScript", "Laravel", "SASS", "Elektron"],
     demoUrl: "",
+    repoUrl: "",
   },
   {
     slug: "klinin-laundry",
@@ -49,6 +51,7 @@ export const projectsDetail: ProjectDetail[] = [
       "TailwindCSS",
     ],
     demoUrl: "https://klinin-website.vercel.app/",
+    repoUrl: "",
   },
   {
     slug: "moviessis",
@@ -67,6 +70,7 @@ export const projectsDetail: ProjectDetail[] = [
       "TMDB API",
     ],
     demoUrl: "https://moviessis.vercel.app/",
+    repoUrl: "https://github.com/hndraphyy/MOVIESSIS",
   },
   {
     slug: "i-landing",
@@ -84,5 +88,6 @@ export const projectsDetail: ProjectDetail[] = [
       "TailwindCSS",
     ],
     demoUrl: "https://inisial-landing.netlify.app/",
+    repoUrl: "https://github.com/hndraphyy/LANDING",
   },
 ];
