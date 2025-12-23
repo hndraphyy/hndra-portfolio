@@ -19,11 +19,6 @@ const projectConfigPage = {
       link: "/projects/eazy-cashier",
     },
     {
-      title: "Klinin Laundry",
-      image: "/assets/images/homepage/project2-mobile.webp",
-      link: "/projects/klinin-laundry",
-    },
-    {
       title: "Moviessis",
       image: "/assets/images/homepage/project3-mobile.webp",
       link: "/projects/moviessis",
@@ -32,6 +27,11 @@ const projectConfigPage = {
       title: "I-Landing",
       image: "/assets/images/homepage/project4-mobile.webp",
       link: "/projects/i-landing",
+    },
+    {
+      title: "Klinin Laundry",
+      image: "/assets/images/homepage/project2-mobile.webp",
+      link: "/projects/klinin-laundry",
     },
   ],
 };
