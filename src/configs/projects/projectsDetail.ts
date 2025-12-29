@@ -37,23 +37,6 @@ export const projectsDetail: ProjectDetail[] = [
     repoUrl: "",
   },
   {
-    slug: "klinin-laundry",
-    title: "Klinin Laundry",
-    image: "/assets/images/homepage/project2.webp",
-    description:
-      "Landing page laundry berbasis web yang dirancang untuk memperkenalkan layanan secara profesional. Halaman ini menampilkan informasi lengkap tentang layanan yang tersedia, daftar harga, keunggulan bisnis, serta kontak yang memudahkan pelanggan untuk melakukan pemesanan. Dengan desain responsif dan modern, landing page ini membantu meningkatkan kepercayaan pelanggan sekaligus memperluas jangkauan promosi usaha laundry.",
-    technologies: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "React.js",
-      "Vite",
-      "TailwindCSS",
-    ],
-    demoUrl: "https://klinin-website.vercel.app/",
-    repoUrl: "",
-  },
-  {
     slug: "moviessis",
     title: "Moviessis",
     image: "/assets/images/homepage/project3.webp",
@@ -89,5 +72,22 @@ export const projectsDetail: ProjectDetail[] = [
     ],
     demoUrl: "https://inisial-landing.netlify.app/",
     repoUrl: "https://github.com/hndraphyy/LANDING",
+  },
+  {
+    slug: "klinin-laundry",
+    title: "Klinin Laundry",
+    image: "/assets/images/homepage/project2.webp",
+    description:
+      "Landing page laundry berbasis web yang dirancang untuk memperkenalkan layanan secara profesional. Halaman ini menampilkan informasi lengkap tentang layanan yang tersedia, daftar harga, keunggulan bisnis, serta kontak yang memudahkan pelanggan untuk melakukan pemesanan. Dengan desain responsif dan modern, landing page ini membantu meningkatkan kepercayaan pelanggan sekaligus memperluas jangkauan promosi usaha laundry.",
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React.js",
+      "Vite",
+      "TailwindCSS",
+    ],
+    demoUrl: "https://klinin-website.vercel.app/",
+    repoUrl: "",
   },
 ];
