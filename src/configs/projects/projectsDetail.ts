@@ -45,7 +45,6 @@ export const projectsDetail: ProjectDetail[] = [
     technologies: [
       "HTML",
       "CSS",
-      "JavaScript",
       "Next.js",
       "React.js",
       "TypeScript",
@@ -56,6 +55,16 @@ export const projectsDetail: ProjectDetail[] = [
     repoUrl: "https://github.com/hndraphyy/MOVIESSIS",
   },
   {
+    slug: "AI Innovation Landing",
+    title: "AI Innovation Landing",
+    image: "/assets/images/homepage/project6.webp",
+    description:
+      "Template landing page modern yang dibuat sebagai contoh desain web sederhana. Mengusung tampilan clean, responsif, dan mudah dikustomisasi, template ini dapat digunakan untuk berbagai kebutuhan seperti company profile, personal branding, maupun project showcase. Dengan struktur layout yang rapi, landing page ini bisa dijadikan dasar untuk pengembangan website yang lebih kompleks.",
+    technologies: ["HTML", "CSS", "Vue.js", "TypeScript", "UnoCSS"],
+    demoUrl: "https://ai-innovation-landing.vercel.app",
+    repoUrl: "https://github.com/hndraphyy/ai-innovation-landing",
+  },
+  {
     slug: "i-landing",
     title: "I-Landing",
     image: "/assets/images/homepage/project4.webp",
@@ -64,7 +73,6 @@ export const projectsDetail: ProjectDetail[] = [
     technologies: [
       "HTML",
       "CSS",
-      "JavaScript",
       "Next.js",
       "React.js",
       "TypeScript",

@@ -24,6 +24,11 @@ const projectConfigPage = {
       link: "/projects/moviessis",
     },
     {
+      title: "AI Innovation Landing",
+      image: "/assets/images/homepage/project6-mobile.webp",
+      link: "/projects/ai-innovation-landing",
+    },
+    {
       title: "I-Landing",
       image: "/assets/images/homepage/project4-mobile.webp",
       link: "/projects/i-landing",
