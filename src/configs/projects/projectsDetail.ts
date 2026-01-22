@@ -55,7 +55,7 @@ export const projectsDetail: ProjectDetail[] = [
     repoUrl: "https://github.com/hndraphyy/MOVIESSIS",
   },
   {
-    slug: "AI Innovation Landing",
+    slug: "ai-innovation-landing",
     title: "AI Innovation Landing",
     image: "/assets/images/homepage/project6.webp",
     description:
