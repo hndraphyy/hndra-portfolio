@@ -118,7 +118,7 @@ export default function AboutSection() {
           <div className="mt-8 md:mt-0">
             <div className="flex gap-2">
               <a
-                href="/assets/pdf/Hendra_Aditya_Resume.pdf"
+                href="/assets/pdf/resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 download
