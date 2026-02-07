@@ -11,7 +11,7 @@ const AboutMeSection = () => {
       <Container className="flex flex-col gap-8 md:gap-16 lg:gap-20 -mt-10 lg:mt-0">
         <div className="w-[225px] h-[8px] sm:w-[340px] md:w-[450px] lg:w-[600px] lg:h-[20px] bg-green absolute top-0"></div>
 
-        <div className="space-y-10">
+        <div className="space-y-16">
           <p className="text-gray-400 text-base text-md sm:text-lg leading-relaxed">
             {aboutContent.description}
           </p>
@@ -38,7 +38,6 @@ const AboutMeSection = () => {
           </div>
 
           <div>
-            <div></div>
             <div>
               <h3 className="text-white text-2xl leading-relaxed mb-3">
                 Experience
@@ -57,6 +56,35 @@ const AboutMeSection = () => {
 
                 <ul className="list-disc list-outside mt-2 pl-6 space-y-2 text-gray-400">
                   {experience.desc.map((d, i) => (
+                    <li key={i}>
+                      <span className=" text-base sm:text-md leading-relaxed">
+                        {d.content}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+          <div>
+            <div>
+              <h3 className="text-white text-2xl leading-relaxed mb-3">
+                Education
+              </h3>
+            </div>
+            {aboutContent.educations.map((education) => (
+              <div key={education.name} className="mb-6">
+                <div className="text-green">
+                  <p className="text-base sm:text-lg leading-relaxed font-semibold">
+                    {education.name}
+                  </p>
+                  <p className="text-base sm:text-lg leading-relaxed font-semibold">
+                    {education.date}
+                  </p>
+                </div>
+
+                <ul className="list-disc list-outside mt-2 pl-6 space-y-2 text-gray-400">
+                  {education.desc.map((d, i) => (
                     <li key={i}>
                       <span className=" text-base sm:text-md leading-relaxed">
                         {d.content}

@@ -1,21 +1,21 @@
-export interface Skill {
+interface Skill {
   name: string;
   icon: string;
 }
 
-export interface Experience {
+interface Experience {
   name: string;
   date: string;
   desc: Desc[];
 }
 
-export interface Education {
+interface Education {
   name: string;
   date: string;
   desc: Desc[];
 }
 
-export interface Desc {
+interface Desc {
   content: string;
 }
 
@@ -76,14 +76,17 @@ export const aboutContent: AboutContent = {
   ],
   educations: [
     {
-      name: "s",
-      date: "May 2025 – Dec 2025",
+      name: "SMK Negeri 1 Kediri",
+      date: "Jul 2022 – May 2025",
       desc: [
         {
-          content: `Menerjemahkan wireframe POS menjadi desain UI yang berfokus pada desktop, memastikan alur kasir yang jelas dan kemudahan penggunaan.`,
+          content: `Terbiasa menggunakan React.js, Next.js, TypeScript, dan Tailwind CSS yang dipelajari secara otodidak melalui eksplorasi mandiri dan pengembangan proyek. Memiliki pengalaman mengimplementasikan Laravel Blade dan SASS untuk pengembangan antarmuka web yang rapi dan scalable.`,
         },
         {
-          content: `Memperbaiki dan melakukan slicing menggunakan Laravel Blade dan SCSS untuk mengimplementasikan CRUD produk, alur kasir, dan halaman transaksi.`,
+          content: `Memiliki pengetahuan dasar yang kuat dalam Jaringan Komputer, termasuk konfigurasi MikroTik, pemecahan masalah jaringan, dan pemeliharaan perangkat keras (kabel/crimping).`,
+        },
+        {
+          content: `Menjabat sebagai Sekretaris di Organisasi Sie Kerohanian Islam (SKI), mengelola dokumentasi administrasi dan mengoordinasikan kegiatan organisasi.`,
         },
       ],
     },
