@@ -68,9 +68,8 @@ export const aboutContent: AboutContent = {
     },
   ],
   goals: `
-    Ke depan, saya ingin terus mengembangkan kemampuan di bidang frontend development,
-    termasuk memperdalam animasi antarmuka menggunakan Framer Motion. Selain itu,
-    saya juga tertarik mempelajari sisi backend secara bertahap agar dapat berkembang
-    menjadi seorang Fullstack Developer.
+    saya berkomitmen untuk terus mengasah kemampuan di bidang frontend development, dengan fokus pada pengembangan animasi antarmuka yang halus dan bermakna menggunakan Framer Motion guna meningkatkan kualitas pengalaman pengguna.
+
+    Seiring dengan itu, saya juga secara bertahap memperluas pemahaman di sisi backend development, dengan tujuan membangun perspektif teknis yang lebih menyeluruh dan berkembang sebagai seorang Fullstack Developer yang adaptif dan berorientasi pada solusi.
   `,
 };
