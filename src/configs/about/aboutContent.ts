@@ -22,12 +22,9 @@ export interface AboutContent {
 
 export const aboutContent: AboutContent = {
   description: `
-    Saya adalah seorang Frontend Developer dengan minat besar pada pengembangan
-    antarmuka web modern. Saya terbiasa menggunakan Next.js dengan TypeScript (TSX)
-    dan TailwindCSS sebagai stack utama untuk membangun website yang responsif,
-    cepat, dan mudah dikembangkan. Selain itu, saya merupakan lulusan SMK Negeri 1 Kediri
-    jurusan Teknik Komputer dan Jaringan (TKJ), yang membekali saya dengan dasar
-    pemahaman teknologi dan sistem komputer.
+    Frontend Developer yang berorientasi pada detail, dengan pengalaman profesional menyelesaikan 22+ task production-ready di 8+ proyek klien. Terbiasa membangun aplikasi web yang performant dan terstruktur menggunakan React.js, Next.js, dan Vue.js, dengan fokus pada penerjemahan desain high-fidelity Figma menjadi kode yang modular, scalable, dan mudah dirawat.
+
+    Berpengalaman bekerja dalam lingkungan Agile, berkolaborasi dengan designer, backend engineer, dan QA untuk menghasilkan solusi web yang bersih, berkelanjutan, dan berfokus pada kebutuhan pengguna.
   `,
   skills: [
     { name: "HTML", icon: "/assets/images/svg/tech/html.svg" },
@@ -43,14 +40,29 @@ export const aboutContent: AboutContent = {
   ],
   experiences: [
     {
-      name: "ORDO APPS, Surabaya (Frontend Web)",
+      name: "KOVATEKNO, Kediri | Frontend Developer",
+      date: "May 2025 – Dec 2025",
+      desc: [
+        {
+          content: `Menerjemahkan wireframe POS menjadi desain UI yang berfokus pada desktop, memastikan alur kasir yang jelas dan kemudahan penggunaan.`,
+        },
+        {
+          content: `Memperbaiki dan melakukan slicing menggunakan Laravel Blade dan SCSS untuk mengimplementasikan CRUD produk, alur kasir, dan halaman transaksi.`,
+        },
+      ],
+    },
+    {
+      name: "ORDOAPPS, Surabaya | Frontend Developer Intern",
       date: "Jul 2024 – Nov 2024",
       desc: [
         {
-          content: `Mengonversi desain Figma menjadi halaman web yang bersih dan responsif menggunakan Laravel Blade dan SASS (SCSS) untuk landing page serta dashboard admin.`,
+          content: `Implementasi UI dari Desain ke Produksi: Menerjemahkan desain Figma menjadi template Laravel Blade siap produksi untuk lebih dari 8+ brand, menyelesaikan lebih dari 22+ tugas pengembangan frontend termasuk komponen UI, penyesuaian tata letak, dan perbaikan bug.`,
         },
         {
-          content: `Memperbaiki bug frontend berdasarkan feedback QA serta berkolaborasi dengan desainer dan developer backend untuk menyempurnakan tampilan dan pengalaman pengguna sebelum rilis ke produksi.`,
+          content: `Kolaborasi & Debugging Antar-Tim: Bekerja sama dengan pengembang frontend senior untuk mengidentifikasi dan menyelesaikan masalah UI, menyempurnakan komponen, dan mendukung penyelesaian proyek tepat waktu.`,
+        },
+        {
+          content: `Kolaborasi & Debugging Antar-Tim: Bekerja sama dengan pengembang frontend senior untuk mengidentifikasi dan menyelesaikan masalah UI, menyempurnakan komponen, dan mendukung penyelesaian proyek tepat waktu.`,
         },
       ],
     },
