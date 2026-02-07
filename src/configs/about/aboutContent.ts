@@ -76,7 +76,7 @@ export const aboutContent: AboutContent = {
   ],
   educations: [
     {
-      name: "SMK Negeri 1 Kediri",
+      name: "SMK Negeri 1 Kediri | Teknik Komputer dan Jaringan",
       date: "Jul 2022 – May 2025",
       desc: [
         {
