@@ -9,6 +9,12 @@ export interface Experience {
   desc: Desc[];
 }
 
+export interface Education {
+  name: string;
+  date: string;
+  desc: Desc[];
+}
+
 export interface Desc {
   content: string;
 }
@@ -17,6 +23,7 @@ export interface AboutContent {
   description: string;
   skills: Skill[];
   experiences: Experience[];
+  educations: Education[];
   goals: string;
 }
 
@@ -63,6 +70,20 @@ export const aboutContent: AboutContent = {
         },
         {
           content: `Kolaborasi & Debugging Antar-Tim: Bekerja sama dengan pengembang frontend senior untuk mengidentifikasi dan menyelesaikan masalah UI, menyempurnakan komponen, dan mendukung penyelesaian proyek tepat waktu.`,
+        },
+      ],
+    },
+  ],
+  educations: [
+    {
+      name: "s",
+      date: "May 2025 – Dec 2025",
+      desc: [
+        {
+          content: `Menerjemahkan wireframe POS menjadi desain UI yang berfokus pada desktop, memastikan alur kasir yang jelas dan kemudahan penggunaan.`,
+        },
+        {
+          content: `Memperbaiki dan melakukan slicing menggunakan Laravel Blade dan SCSS untuk mengimplementasikan CRUD produk, alur kasir, dan halaman transaksi.`,
         },
       ],
     },
