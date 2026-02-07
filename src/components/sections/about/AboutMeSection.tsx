@@ -17,7 +17,9 @@ const AboutMeSection = () => {
           </p>
 
           <div>
-            <h2 className="text-white text-2xl leading-relaxed mb-3">Skills</h2>
+            <h2 className="text-white text-2xl leading-relaxed mb-3 font-bold">
+              Skills
+            </h2>
             <ul className="flex flex-wrap justify-start gap-6">
               {aboutContent.skills.map((skill) => (
                 <li
@@ -39,17 +41,17 @@ const AboutMeSection = () => {
 
           <div>
             <div>
-              <h3 className="text-white text-2xl leading-relaxed mb-3">
+              <h3 className="text-white text-2xl leading-relaxed mb-3 font-bold">
                 Experience
               </h3>
             </div>
             {aboutContent.experiences.map((experience) => (
               <div key={experience.name} className="mb-6">
                 <div className="text-green">
-                  <p className="text-base sm:text-lg leading-relaxed font-semibold">
+                  <p className="text-base sm:text-lg leading-relaxed font-medium">
                     {experience.name}
                   </p>
-                  <p className="text-base sm:text-lg leading-relaxed font-semibold">
+                  <p className="text-base sm:text-lg leading-relaxed font-medium">
                     {experience.date}
                   </p>
                 </div>
@@ -68,17 +70,17 @@ const AboutMeSection = () => {
           </div>
           <div>
             <div>
-              <h3 className="text-white text-2xl leading-relaxed mb-3">
+              <h3 className="text-white text-2xl leading-relaxed mb-3 font-bold">
                 Education
               </h3>
             </div>
             {aboutContent.educations.map((education) => (
               <div key={education.name} className="mb-6">
                 <div className="text-green">
-                  <p className="text-base sm:text-lg leading-relaxed font-semibold">
+                  <p className="text-base sm:text-lg leading-relaxed font-medium">
                     {education.name}
                   </p>
-                  <p className="text-base sm:text-lg leading-relaxed font-semibold">
+                  <p className="text-base sm:text-lg leading-relaxed font-medium">
                     {education.date}
                   </p>
                 </div>
