@@ -25,7 +25,7 @@ export default function ProjectsMeSection() {
                 alt={project.title}
                 width={1200}
                 height={600}
-                className="w-full object-contain object-top pointer-events-none select-none transition-transform duration-500 group-hover:scale-105"
+                className="w-full object-contain object-top pointer-events-none select-none"
                 draggable={false}
                 priority
               />
@@ -50,7 +50,7 @@ export default function ProjectsMeSection() {
                 alt={projectsMobile.title}
                 width={1200}
                 height={600}
-                className="w-full object-contain object-top pointer-events-none select-none transition-transform duration-500 group-hover:scale-105"
+                className="w-full object-contain object-top pointer-events-none select-none"
                 draggable={false}
                 priority
               />
