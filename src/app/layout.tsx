@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "../styles/global.css";
 import LenisProvider from "@/components/providers/LenisProvider";
 import Navbar from "@/components/navbar/Navbar";
+import { LinkButton } from "@/components/ui/Button";
 import Footer from "@/components/footer/Footer";
 
 export const metadata: Metadata = {
@@ -40,14 +41,6 @@ export const metadata: Metadata = {
     locale: "id_ID",
     type: "website",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Hendra Aditya Portfolio",
-    description:
-      "Kunjungi portofolio Hendra Aditya, seorang Web Developer berbasis Next.js.",
-    images: ["https://hendraaditya.vercel.app/og.png"],
-    creator: "",
-  },
   robots: {
     index: true,
     follow: true,
@@ -73,6 +66,9 @@ export default function RootLayout({
           <Navbar />
         </LenisProvider>
         {children}
+        <LinkButton className="!fixed bottom-0 right-0" href="/about">
+          About Me
+        </LinkButton>
         <Footer />
       </body>
     </html>
