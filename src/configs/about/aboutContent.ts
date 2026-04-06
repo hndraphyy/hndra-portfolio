@@ -29,9 +29,9 @@ export interface AboutContent {
 
 export const aboutContent: AboutContent = {
   description: `
-    Frontend Developer yang berorientasi pada detail, dengan pengalaman profesional menyelesaikan 22+ task production-ready di 8+ proyek klien. Terbiasa membangun aplikasi web yang performant dan terstruktur menggunakan React.js, Next.js, dan Vue.js, dengan fokus pada penerjemahan desain high-fidelity Figma menjadi kode yang modular, scalable, dan mudah dirawat.
+    Detail-oriented Frontend Developer specialized in building scalable, pixel-perfect interfaces using Next.js, TypeScript, and React. I have a proven track record of delivering 10+ web projects and completing over 60+ development tasks across multiple production environments.
 
-    Berpengalaman bekerja dalam lingkungan Agile, berkolaborasi dengan designer, backend engineer, dan QA untuk menghasilkan solusi web yang bersih, berkelanjutan, dan berfokus pada kebutuhan pengguna.
+    Experienced in working within Agile workflows, collaborating closely with designers, backend engineers, and QA teams to translate complex high-fidelity Figma designs into clean, modular, and maintainable code that prioritizes user experience and performance.
   `,
   skills: [
     { name: "HTML", icon: "/assets/images/svg/tech/html.svg" },
@@ -51,10 +51,13 @@ export const aboutContent: AboutContent = {
       date: "May 2025 – Dec 2025",
       desc: [
         {
-          content: `Menerjemahkan wireframe POS menjadi desain UI yang berfokus pada desktop, memastikan alur kasir yang jelas dan kemudahan penggunaan.`,
+          content: `End-to-End UI Development: Delivered 5+ web projects and executed 30+ frontend tasks, successfully translating complex Figma designs into responsive, high-performance landing pages and multi-role dashboards using Next.js and TypeScript.`,
         },
         {
-          content: `Memperbaiki dan melakukan slicing menggunakan Laravel Blade dan SCSS untuk mengimplementasikan CRUD produk, alur kasir, dan halaman transaksi.`,
+          content: `Scalable Component Architecture: Engineered highly reusable and modular UI components for a complex wholesale Point-of-Sale (POS) system, significantly improving code maintainability.`,
+        },
+        {
+          content: `Cross-Functional Collaboration: Partnered seamlessly with backend developers and QA teams to ensure accurate API integration and iterate on interfaces based on rigorous testing feedback.`,
         },
       ],
     },
@@ -63,37 +66,34 @@ export const aboutContent: AboutContent = {
       date: "Jul 2024 – Nov 2024",
       desc: [
         {
-          content: `Implementasi UI dari Desain ke Produksi: Menerjemahkan desain Figma menjadi template Laravel Blade siap produksi untuk lebih dari 8+ brand, menyelesaikan lebih dari 22+ tugas pengembangan frontend termasuk komponen UI, penyesuaian tata letak, dan perbaikan bug.`,
+          content: `Production-Ready UI Implementation: Translated Figma designs into production-ready Laravel Blade templates for 8+ projects, completing 22+ development tasks including UI components, layout updates, and bug fixes.`,
         },
         {
-          content: `Kolaborasi & Debugging Antar-Tim: Bekerja sama dengan pengembang frontend senior untuk mengidentifikasi dan menyelesaikan masalah UI, menyempurnakan komponen, dan mendukung penyelesaian proyek tepat waktu.`,
-        },
-        {
-          content: `Kolaborasi & Debugging Antar-Tim: Bekerja sama dengan pengembang frontend senior untuk mengidentifikasi dan menyelesaikan masalah UI, menyempurnakan komponen, dan mendukung penyelesaian proyek tepat waktu.`,
+          content: `Debugging & Optimization: Collaborated with senior developers to identify and resolve UI issues, refined components, and ensured consistent usability based on QA feedback.`,
         },
       ],
     },
   ],
   educations: [
     {
-      name: "SMK Negeri 1 Kediri | Teknik Komputer dan Jaringan",
+      name: "SMK Negeri 1 Kediri | Computer and Network Engineering",
       date: "Jul 2022 – May 2025",
       desc: [
         {
-          content: `Terbiasa menggunakan React.js, Next.js, TypeScript, dan Tailwind CSS yang dipelajari secara otodidak melalui eksplorasi mandiri dan pengembangan proyek. Memiliki pengalaman mengimplementasikan Laravel Blade dan SASS untuk pengembangan antarmuka web yang rapi dan scalable.`,
+          content: `Self-taught expertise in modern frontend technologies including React.js, Next.js, TypeScript, and Tailwind CSS through independent project development.`,
         },
         {
-          content: `Memiliki pengetahuan dasar yang kuat dalam Jaringan Komputer, termasuk konfigurasi MikroTik, pemecahan masalah jaringan, dan pemeliharaan perangkat keras (kabel/crimping).`,
+          content: `Strong foundational knowledge in Computer Networking, including MikroTik configuration, network troubleshooting, and hardware maintenance.`,
         },
         {
-          content: `Menjabat sebagai Sekretaris di Organisasi Sie Kerohanian Islam (SKI), mengelola dokumentasi administrasi dan mengoordinasikan kegiatan organisasi.`,
+          content: `Served as Secretary in the Islamic Spiritual Organization (SKI), managing administrative documentation and coordinating organizational activities.`,
         },
       ],
     },
   ],
   goals: `
-    saya berkomitmen untuk terus mengasah kemampuan di bidang frontend development, dengan fokus pada pengembangan animasi antarmuka yang halus dan bermakna menggunakan Framer Motion guna meningkatkan kualitas pengalaman pengguna.
+    I am committed to continuously refining my frontend development skills, with a specific focus on creating smooth and meaningful interface animations using Framer Motion to elevate user experience.
 
-    Seiring dengan itu, saya juga secara bertahap memperluas pemahaman di sisi backend development, dengan tujuan membangun perspektif teknis yang lebih menyeluruh dan berkembang sebagai seorang Fullstack Developer yang adaptif dan berorientasi pada solusi.
+    Parallel to this, I am gradually expanding my expertise into backend development, aiming to build a more holistic technical perspective and evolve into an adaptive, solution-oriented Fullstack Developer.
   `,
 };
