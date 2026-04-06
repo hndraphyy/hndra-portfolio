@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "../styles/global.css";
 import LenisProvider from "@/components/providers/LenisProvider";
 import Navbar from "@/components/navbar/Navbar";
-import { LinkButton } from "@/components/ui/Button";
+// import { LinkButton } from "@/components/ui/Button";
 import Footer from "@/components/footer/Footer";
 
 export const metadata: Metadata = {
@@ -66,9 +66,9 @@ export default function RootLayout({
           <Navbar />
         </LenisProvider>
         {children}
-        <LinkButton className="!fixed bottom-0 right-0" href="/about">
+        {/* <LinkButton className="!fixed bottom-0 right-0" href="/about">
           About Me
-        </LinkButton>
+        </LinkButton> */}
         <Footer />
       </body>
     </html>

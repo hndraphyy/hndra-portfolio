@@ -14,7 +14,7 @@ export const projectsDetail: ProjectDetail[] = [
     title: "Zotural",
     image: "/assets/images/homepage/project5.webp",
     description:
-      "Zotural adalah aplikasi dashboard berbasis web yang dirancang sebagai simulasi sistem admin panel internal sebuah perusahaan. Aplikasi ini menerapkan konsep role-based access dengan dua peran utama, yaitu Manager dan Sales Agent, yang masing-masing memiliki hak akses dan fitur berbeda. Manager berperan dalam memantau keseluruhan operasional melalui dashboard ringkasan, mengelola data karyawan, produk, transaksi, serta melihat laporan bisnis secara global. Sementara itu, Sales Agent difokuskan pada aktivitas operasional seperti mengelola data customer, membuat order, dan memantau performa penjualan pribadi. Project ini dikembangkan sebagai frontend-only application dengan data dummy.",
+      "Zotural is a web-based dashboard application designed as a simulation of an internal corporate admin panel. It features a robust role-based access control (RBAC) system with two primary roles: Manager and Sales Agent. Managers can oversee global operations through a summary dashboard, manage employee data, products, and transactions, and view comprehensive business reports. Meanwhile, Sales Agents focus on operational tasks such as managing customer data, creating orders, and monitoring individual sales performance. This project was developed as a frontend-only application utilizing mock data.",
     technologies: [
       "HTML",
       "CSS",
@@ -31,7 +31,7 @@ export const projectsDetail: ProjectDetail[] = [
     title: "Eazy Cashier",
     image: "/assets/images/homepage/project1.webp",
     description:
-      "Sistem kasir sederhana yang dirancang untuk membantu UMKM dalam mengelola penjualan sehari-hari. Aplikasi ini memiliki halaman kasir untuk melakukan transaksi secara cepat, fitur manajemen data barang termasuk tambah dan update stok, serta pencatatan transaksi yang rapi. Selain itu, sistem dilengkapi dengan fungsi cetak invoice sehingga memudahkan pemilik usaha dalam memberikan bukti transaksi kepada pelanggan sekaligus memonitor laporan penjualan.",
+      "A lightweight and intuitive point-of-sale system tailored for small to medium enterprises (SMEs) to streamline daily sales management. The application features a fast-checkout interface, comprehensive inventory management including stock updates, and organized transaction logging. Additionally, the system includes an invoice printing function to help business owners provide proof of purchase to customers while efficiently monitoring sales reports.",
     technologies: ["HTML", "CSS", "JavaScript", "Laravel", "SASS", "Elektron"],
     demoUrl: "",
     repoUrl: "",
@@ -41,7 +41,7 @@ export const projectsDetail: ProjectDetail[] = [
     title: "Moviessis",
     image: "/assets/images/homepage/project3.webp",
     description:
-      "Landing page pencarian film yang dibangun dengan integrasi TMDB API. Pengguna dapat menjelajahi berbagai kategori film, melihat daftar film populer, dan melakukan pencarian berdasarkan judul. Tampilan sederhana berbasis poster membuat informasi lebih visual dan mudah dipahami, sehingga pengguna bisa menemukan film yang mereka inginkan dengan cepat.",
+      "A movie discovery landing page built by integrating the TMDB API. Users can explore various movie categories, browse lists of popular titles, and search for specific films by title. The clean, poster-based interface emphasizes visual information, allowing users to find and discover their favorite movies quickly and effortlessly.",
     technologies: [
       "HTML",
       "CSS",
@@ -59,7 +59,7 @@ export const projectsDetail: ProjectDetail[] = [
     title: "AI Innovation Landing",
     image: "/assets/images/homepage/project6.webp",
     description:
-      "Template landing page modern yang dibuat sebagai contoh desain web sederhana. Mengusung tampilan clean, responsif, dan mudah dikustomisasi, template ini dapat digunakan untuk berbagai kebutuhan seperti company profile, personal branding, maupun project showcase. Dengan struktur layout yang rapi, landing page ini bisa dijadikan dasar untuk pengembangan website yang lebih kompleks.",
+      "A modern landing page template designed as a clean and high-performance web example. Featuring a responsive and highly customizable layout, this template is ideal for company profiles, personal branding, or project showcases. Its organized code structure serves as a solid foundation for building more complex web applications.",
     technologies: ["HTML", "CSS", "Vue.js", "TypeScript", "UnoCSS"],
     demoUrl: "https://ai-innovation-landing.vercel.app",
     repoUrl: "https://github.com/hndraphyy/ai-innovation-landing",
@@ -69,7 +69,7 @@ export const projectsDetail: ProjectDetail[] = [
     title: "I-Landing",
     image: "/assets/images/homepage/project4.webp",
     description:
-      "Template landing page modern yang dibuat sebagai contoh desain web sederhana. Mengusung tampilan clean, responsif, dan mudah dikustomisasi, template ini dapat digunakan untuk berbagai kebutuhan seperti company profile, personal branding, maupun project showcase. Dengan struktur layout yang rapi, landing page ini bisa dijadikan dasar untuk pengembangan website yang lebih kompleks.",
+      "A contemporary landing page template showcasing clean design principles and responsive layouts. Built for versatility, it can be easily adapted for corporate profiles or personal portfolios. The modular structure ensures scalability and maintainability for further development.",
     technologies: [
       "HTML",
       "CSS",
@@ -86,7 +86,7 @@ export const projectsDetail: ProjectDetail[] = [
     title: "Klinin Laundry",
     image: "/assets/images/homepage/project2.webp",
     description:
-      "Landing page laundry berbasis web yang dirancang untuk memperkenalkan layanan secara profesional. Halaman ini menampilkan informasi lengkap tentang layanan yang tersedia, daftar harga, keunggulan bisnis, serta kontak yang memudahkan pelanggan untuk melakukan pemesanan. Dengan desain responsif dan modern, landing page ini membantu meningkatkan kepercayaan pelanggan sekaligus memperluas jangkauan promosi usaha laundry.",
+      "A professional laundry service landing page designed to enhance online brand presence. The site provides detailed information about available services, price lists, business advantages, and contact details for easy booking. With its modern and responsive design, this page helps build customer trust and broadens the reach of laundry business promotions.",
     technologies: [
       "HTML",
       "CSS",

@@ -17,7 +17,9 @@ export default function LanguageToggle() {
         </span>
       </button>
 
-      <LinkButton href="/about">{lang === "en" ? "ENG" : "IDN"}</LinkButton>
+      <LinkButton href="/about" className="transition-all duration-300">
+        {lang === "en" ? "About Me" : "Tentang Saya"}
+      </LinkButton>
     </div>
   );
 }
