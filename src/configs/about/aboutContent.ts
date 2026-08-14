@@ -47,7 +47,7 @@ export const aboutContent: AboutContent = {
   ],
   experiences: [
     {
-      name: "KOVATEKNO, Kediri | Frontend Developer",
+      name: "KOVATEKNO, Kediri | Frontend Engineer",
       date: "May 2025 – Dec 2025",
       desc: [
         {
