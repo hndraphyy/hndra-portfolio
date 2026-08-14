@@ -18,7 +18,7 @@ const AboutMeSection = () => {
 
           <div>
             <h2 className="text-white text-2xl leading-relaxed mb-3 font-bold">
-              Skills
+              Tech Stack
             </h2>
             <ul className="flex flex-wrap justify-start gap-6">
               {aboutContent.skills.map((skill) => (
